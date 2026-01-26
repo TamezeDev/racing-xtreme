@@ -53,7 +53,7 @@ public class Car {
                 return new Car("Williams", "FW47", 7, 8, 7, defaultPath + "WilliamsCar.png", defaultPath + "WilliamsCarRace.png");
             }
             case "Sauber" -> {
-                return new Car("Sauber", "C45", 8, 8, 7, defaultPath + "SauberCar.png",defaultPath + "SauberCarRace.png");
+                return new Car("Sauber", "C45", 8, 8, 7, defaultPath + "SauberCar.png", defaultPath + "SauberCarRace.png");
             }
             case "Racing Bulls" -> {
                 return new Car("Racing Bulls", "VCAR-02", 8, 6, 8, defaultPath + "RacingBullsCar.png", defaultPath + "RacingBullsCarRace.png");
@@ -77,7 +77,7 @@ public class Car {
         this.kilometers = kilometers;
     }
 
-    public String getname() {
+    public String getName() {
         return name;
     }
 
@@ -85,29 +85,10 @@ public class Car {
         return model;
     }
 
-    public int getspeed() {
-        return speed;
-    }
-
-    public int getacceleration() {
-        return acceleration;
-    }
-
-    public int gethardness() {
-        return hardness;
-    }
-
     public Image getImage() {
         return image;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getModel() {
         return model;
@@ -125,24 +106,12 @@ public class Car {
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
     public int getAcceleration() {
         return acceleration;
     }
 
-    public void setAcceleration(int acceleration) {
-        this.acceleration = acceleration;
-    }
-
     public int getHardness() {
         return hardness;
-    }
-
-    public void setHardness(int hardness) {
-        this.hardness = hardness;
     }
 
     public int getBasePower() {
@@ -153,14 +122,9 @@ public class Car {
         this.basePower = basePower;
     }
 
-    public void setRaceImage(Image raceImage) {
-        this.raceImage = raceImage;
-    }
-
-    public void increaseKm(double km){
+    public void increaseKm(double km) {
         kilometers += km;
     }
-
 
     public Image getRaceImage() {
         return raceImage;

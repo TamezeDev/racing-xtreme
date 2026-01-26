@@ -135,10 +135,6 @@ public class Driver {
         return totalScore;
     }
 
-    public void setTotalScore(int totalScore) {
-        this.totalScore = totalScore;
-    }
-
     public String getNickName() {
         return nickName;
     }
@@ -159,17 +155,10 @@ public class Driver {
         return waterSkill;
     }
 
-    public void setWaterSkill(int waterSkill) {
-        this.waterSkill = waterSkill;
-    }
-
     public int getEndurance() {
         return endurance;
     }
 
-    public void setEndurance(int endurance) {
-        this.endurance = endurance;
-    }
 
     public int getLuck() {
         return luck;
@@ -181,10 +170,6 @@ public class Driver {
 
     public Car getCar() {
         return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
     }
 
     public boolean isRightQuestion() {

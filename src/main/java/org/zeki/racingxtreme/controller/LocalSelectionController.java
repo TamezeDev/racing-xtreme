@@ -173,7 +173,7 @@ public class LocalSelectionController {
         }
     }
 
-    private  void createEmptyDrivers(){
+    private void createEmptyDrivers() {
         int races = Championship.getInstance().getRaces().length;
         for (int i = 0; i < races; i++) {
             int drivers = Championship.getInstance().getPlayersNumber();

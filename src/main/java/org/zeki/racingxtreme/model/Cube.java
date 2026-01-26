@@ -32,7 +32,4 @@ public class Cube {
         return turningCubeImages;
     }
 
-    public void setTurningCubeImages(Image[] turningCubeImages) {
-        this.turningCubeImages = turningCubeImages;
-    }
 }

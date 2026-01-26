@@ -51,7 +51,4 @@ public class Championship {
         this.gameMode = gameMode;
     }
 
-    public void setRaces(Race[] races) {
-        this.races = races;
-    }
 }

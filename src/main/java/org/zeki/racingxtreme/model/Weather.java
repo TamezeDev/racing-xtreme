@@ -33,16 +33,8 @@ public class Weather {
         }
     }
 
-    public void setWeatherName(String weatherName) {
-        this.weatherName = weatherName;
-    }
-
     public Image getImageWeather() {
         return imageWeather;
-    }
-
-    public void setImageWeather(Image imageWeather) {
-        this.imageWeather = imageWeather;
     }
 
     public String getWeatherName() {

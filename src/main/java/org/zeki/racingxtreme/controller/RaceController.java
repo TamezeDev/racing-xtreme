@@ -134,7 +134,7 @@ public class RaceController {
 
         setImagesCarMap();
         createDriversCards();
-        setWeatherCard(0);
+        setWeatherCard(currentRace);
         loadStatsBox();
         loadCurrentRound();
         updateStatsArea();
@@ -195,6 +195,7 @@ public class RaceController {
 
     @FXML
     private void goToNextPlayer() {
+        feedBackLabel.setVisible(false);
         nextPlayerBtn.setVisible(false);
         executeRound();
 
@@ -222,6 +223,7 @@ public class RaceController {
         resetKmDrivers();
         resetAccumulateCombo();
         loadCurrentRound();
+        setWeatherCard(currentRace);
         loadStatsBox();
         resetCars();
         executeRound();
@@ -356,7 +358,6 @@ public class RaceController {
     private void removeSelectedItem() {
         for (Node node : answersBox.getChildren()) {
             node.getStyleClass().remove("answerSelected");
-
         }
     }
 
@@ -504,6 +505,11 @@ public class RaceController {
         cubeResultLabel.setText("Potencia base:");
         checkAnswer(selectedAnswer);
         updateAcumulateBonusQuestion();
+        if (checkDamageCar()){
+            currentPlayer++;
+            selectedAnswer = -1;
+            return;
+        }
         getTotalKm();
         updateKmDriverLabel();
         moveCar();
@@ -538,6 +544,10 @@ public class RaceController {
         hideFeedbackLabel();
         switch (difficult) {
             case "FÁCIL" -> {
+                if (checkDamageCar() && checkDamageCar()){
+                    currentPlayer++;
+                    return;
+                }
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().setBasePower((int) (Math.random() * 3) + 1);
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).setRightQuestion(random.nextBoolean());
                 if (Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCombo() < 2) {
@@ -547,6 +557,11 @@ public class RaceController {
                 }
             }
             case "NORMAL" -> {
+                if (checkDamageCar()){
+                    currentPlayer++;
+                    selectedAnswer = -1;
+                    return;
+                }
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().setBasePower((int) (Math.random() * 6) + 1);
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).setRightQuestion(random.nextBoolean());
                 if (Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCombo() < 2) {
@@ -556,6 +571,11 @@ public class RaceController {
                 }
             }
             case "DIFÍCIL" -> {
+                if (checkDamageCar()){
+                    currentPlayer++;
+                    selectedAnswer = -1;
+                    return;
+                }
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().setBasePower((int) (Math.random() * (6 - 3) + 3));
                 Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).setRightQuestion(random.nextBoolean());
                 updateAcumulateBonusQuestion();
@@ -637,7 +657,20 @@ public class RaceController {
 
     }
 
-
+    private boolean checkDamageCar(){
+        int carEndurance = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getHardness();
+        int luckDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getLuck();
+        int totalPoints = carEndurance + luckDriver;
+        int randomDamage = (int)(Math.random() *20);
+        if (randomDamage > totalPoints){
+            String nameDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getNickName();
+            feedBackLabel.setText(nameDriver + " tiene problemas mecánicos y no puede moverse");
+            feedBackLabel.setVisible(true);
+            nextPlayerBtn.setVisible(true);
+            return true;
+        }
+        return false;
+    }
 
     private void updateKmDriverLabel() {
         updateStatsArea();
