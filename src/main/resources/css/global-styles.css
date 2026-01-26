@@ -1,0 +1,118 @@
+/* TEXT_FIELD */
+TextField {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-text-box-border: transparent;
+  -fx-text-fill: #fff;
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+  -fx-border-color: transparent transparent #fff transparent;
+  -fx-border-width: 0 0 1px 0;
+  -fx-prompt-text-fill:  #fff;
+  -fx-font-size: 20px;
+}
+/* BUTTONS */
+.model-ButtonA {
+    -fx-padding: 10px 20px 10px 20px;
+    -fx-font-size: 22px;
+    -fx-background-radius: 8px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-background-color: #1D2B4F;
+
+}
+.model-ButtonA:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #003CC8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4)
+}
+/* CIRCUIT IMAGE */
+#circuitPane {
+    -fx-background-image: url("../img/background/track_bg.png");
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+/* PANELS */
+#rootPane {
+    -fx-background-color: #0F0C16;
+}
+.selectTeamPane {
+    -fx-background-color: #B25E00
+}
+/* LABELS */
+.model-labelA {
+    -fx-font-size: 26px;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Dubai Medium";
+}
+.model-labelB {
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Dubai Medium";
+}
+.feedBackLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #FD641C;
+    -fx-font-family: "Dubai Medium";
+}
+.feedBackLabelB {
+    -fx-font-size: 26px;
+    -fx-text-fill: #FD641C;
+    -fx-font-family: "Dubai Medium";
+}
+/* COMBO BOX */
+.model-ComboBoxA.combo-box .list-cell {
+    -fx-background-color: #1D2B4F;
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+}
+.model-ComboBoxA.combo-box .arrow-button {
+    -fx-background-color: #1D2B4F;
+}
+.model-ComboBoxA.combo-box .arrow {
+    -fx-background-color: #fff;
+}
+.model-ComboBoxA.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #1D2B4F;
+        -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+}
+.model-ComboBoxA .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #003CC8;
+    -fx-text-fill: #fff;
+}
+.model-ComboBoxA .combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #1D2B4F;
+    -fx-text-fill: #fff;
+}
+/* CARDS */
+.teamCard, .driverCard, .answerCard{
+    -fx-background-color: #1D2B4F;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.teamCard:hover, .driverCard:hover, .answerCard:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #003CC8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4);
+}
+.cardSelected, .answerSelected {
+    -fx-background-color: #B25E00;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4);
+}
+/* STATISTICS CARDS */
+ProgressBar {
+    -fx-accent: #00ff00;
+    -fx-background-color: #333333;
+}
+
+ProgressBar .track {
+    -fx-background-color: #555555;
+    -fx-background-radius: 5;
+}
+
+ProgressBar .bar {
+    -fx-background-color: linear-gradient(to right, #00ff00, #00cc00);
+    -fx-background-radius: 5;
+}
