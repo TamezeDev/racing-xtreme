@@ -116,3 +116,58 @@ ProgressBar .bar {
     -fx-background-color: linear-gradient(to right, #00ff00, #00cc00);
     -fx-background-radius: 5;
 }
+/* RESULT TABLE*/
+/* Fondo del control TableView */
+.model-TableA.table-view {
+    -fx-background-color: #1D2B4F; /* tu azul de cards */
+    -fx-table-cell-border-color: #0F0C16; /* color de rejilla */
+}
+
+/* Fondo de filas (se ve a través de las celdas) */
+.model-TableA .table-row-cell {
+    -fx-background-color: #1D2B4F;
+    -fx-text-fill: #fff;
+}
+
+/* Alternar color de filas si quieres “zebra” */
+.model-TableA .table-row-cell:odd {
+    -fx-background-color: #1A2440;
+}
+.model-TableA .table-row-cell:even {
+    -fx-background-color: #1D2B4F;
+}
+/* Celdas de la tabla */
+.model-TableA .table-cell {
+    -fx-alignment: center;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 18px;
+}
+
+/* Texto del encabezado de columnas */
+.model-TableA .column-header .label {
+    -fx-alignment: center;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 20px;
+}
+/* Fondo de la barra de cabeceras */
+.model-TableA .column-header-background {
+    -fx-background-color: #003CC8; /* azul hover de tus botones */
+}
+
+/* Fondo de cada cabecera (normalmente transparente para ver el background de arriba) */
+.model-TableA .column-header {
+    -fx-background-color: transparent;
+}
+/* Color de líneas internas (verticales + horizontales) */
+.model-TableA .table-row-cell {
+    -fx-border-color: #0F0C16;
+    -fx-table-cell-border-color: #0F0C16;
+}
+
+/* Borde exterior de toda la tabla */
+.model-TableA.table-view {
+    -fx-border-color: #B25E00; /* tu naranja */
+    -fx-border-width: 2px;
+}

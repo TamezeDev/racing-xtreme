@@ -1,6 +1,7 @@
 package org.zeki.racingxtreme.model;
 
 public class Question {
+    private int idQuestion;
     private String title;
     private Answer[] answers;
 
@@ -11,6 +12,14 @@ public class Question {
     public Question(String title, Answer[] answers) {
         this.title = title;
         this.answers = answers;
+    }
+
+    public int getIdQuestion() {
+        return idQuestion;
+    }
+
+    public void setIdQuestion(int idQuestion) {
+        this.idQuestion = idQuestion;
     }
 
     public String getTitle() {

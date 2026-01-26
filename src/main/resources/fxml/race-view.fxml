@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -205,7 +206,7 @@
                                           <VBox fx:id="podiumBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" visible="false">
                                              <children>
                                                 <Label fx:id="winnerLabel" styleClass="model-labelA" text="Enhorabuena al campeon!!!" />
-                                                <Label fx:id="resultsLabel" styleClass="model-labelB" text="Resultados de la carrera:" />
+                                                <Label styleClass="model-labelB" text="Resultados de la carrera:" />
                                                 <StackPane prefHeight="0.0" prefWidth="1000.0">
                                                    <children>
                                                       <ImageView fitHeight="410.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
@@ -245,6 +246,15 @@
                                                       <Insets top="50.0" />
                                                    </VBox.margin>
                                                 </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <VBox fx:id="resultTableBox" alignment="CENTER" spacing="40.0" visible="false">
+                                             <children>
+                                                <Label styleClass="model-labelA" text="Resultado final del campeonato:" />
+                                                <TableView fx:id="finishTable" prefHeight="200.0" prefWidth="1000.0" styleClass="model-TableA">
+
+                                                </TableView>
+                                                <Button mnemonicParsing="false" onAction="#goToFirstScene" styleClass="model-ButtonA" text="Volver al menú" />
                                              </children>
                                           </VBox>
                                        </children>

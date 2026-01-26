@@ -12,6 +12,7 @@ module org.zeki.racingxtreme {
     requires com.almasb.fxgl.all;
     requires javafx.graphics;
     requires annotations;
+    requires java.desktop;
 
     opens org.zeki.racingxtreme to javafx.fxml;
     exports org.zeki.racingxtreme;

@@ -1,13 +1,15 @@
 package org.zeki.racingxtreme.controller;
 
 import javafx.animation.*;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -15,11 +17,16 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.util.Callback;
 import javafx.util.Duration;
 import org.zeki.racingxtreme.model.Championship;
 import org.zeki.racingxtreme.model.Cube;
 import org.zeki.racingxtreme.model.Driver;
+import org.zeki.racingxtreme.model.Race;
+import org.zeki.racingxtreme.util.Path;
+import org.zeki.racingxtreme.util.SceneHelper;
 
+import java.io.IOException;
 import java.util.*;
 
 public class RaceController {
@@ -31,18 +38,12 @@ public class RaceController {
     private HBox roundsBox;
     @FXML
     private ImageView podium1Image;
-
     @FXML
     private ImageView podium2Image;
-
     @FXML
     private ImageView podium3Image;
-
     @FXML
     private Label winnerLabel;
-    @FXML
-    private Label resultsLabel;
-
     @FXML
     private Button nextPlayerBtn;
     @FXML
@@ -100,21 +101,23 @@ public class RaceController {
     @FXML
     private VBox questionBox;
     @FXML
-    private Label questionLabel;
-    @FXML
     private Label timeLabel;
     @FXML
+    private TableView<Map<String, String>> finishTable;
+    @FXML
+    private VBox resultTableBox;
+    @FXML
+    private Label questionLabel;
+    @FXML
     private Label answer1Label;
-
     @FXML
     private Label answer2Label;
-
     @FXML
     private Label answer3Label;
-
     @FXML
     private Label answer4Label;
 
+    private final Path path = new Path();
     Cube cube = new Cube();
     PauseTransition currentPause = new PauseTransition();
     HashMap<Integer, Label> kmPlayersMap = new HashMap<>();
@@ -201,6 +204,11 @@ public class RaceController {
 
     }
 
+    @FXML
+    private void goToFirstScene(ActionEvent event) throws IOException {
+        SceneHelper.goToOtherScene(path.getStartStage(), event);
+    }
+
     private void resetAllParams() {
         for (int i = 0; i < 4; i++) {
             Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).setCombo(0);
@@ -211,7 +219,17 @@ public class RaceController {
 
     private void startNewRace() {
         if (currentRace == Championship.getInstance().getRaces().length - 1) {
-            //TODO: VOLVER AL MENU PRINCIPAL o mostrar general
+            fillFinishTable();
+            statsBox.getItems().clear();
+            currentPlayer = 0;
+            currentRace++;
+            resetAllParams();
+            resetKmDrivers();
+            resetAccumulateCombo();
+            loadStatsBox();
+            resetCars();
+            podiumBox.setVisible(false);
+            resultTableBox.setVisible(true);
             return;
         }
         feedBackLabel.setVisible(true);
@@ -227,6 +245,51 @@ public class RaceController {
         loadStatsBox();
         resetCars();
         executeRound();
+    }
+
+    private TableColumn<Map<String, String>, String> createColumnsTable(String nombre) {
+        TableColumn<Map<String, String>, String> col = new TableColumn<>(nombre);
+        col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Map<String, String>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Map<String, String>, String> param) {
+                Map<String, String> row = param.getValue();
+                return new SimpleStringProperty(row != null ? row.get(nombre) : "");
+            }
+        });
+        col.setPrefWidth(120);
+        return col;
+    }
+
+    private void fillFinishTable() {
+        Race[] fullChampionship = Championship.getInstance().getRaces();
+        finishTable.getColumns().clear();
+        finishTable.getItems().clear();
+
+        finishTable.getColumns().add(createColumnsTable("JUGADOR"));
+
+        List<String> nombresCircuitos = new ArrayList<>();
+        for (Race race : fullChampionship) {
+            String nombre = race.getCIRCUIT().getName();
+            finishTable.getColumns().add(createColumnsTable(nombre));
+            nombresCircuitos.add(nombre);
+        }
+        finishTable.getColumns().add(createColumnsTable("TOTAL"));
+        ObservableList<Map<String, String>> data = FXCollections.observableArrayList();
+
+        ArrayList<Driver> updatedDrivers = getGlobalStats();
+        for (Driver updatedDriver : updatedDrivers) {
+            Map<String, String> row = new HashMap<>();
+            row.put("JUGADOR", updatedDriver.getNickName());
+            for (int i = 0; i < nombresCircuitos.size(); i++) {
+                row.put(nombresCircuitos.get(i), String.valueOf(updatedDriver.getRaceScores()[i]));
+            }
+            row.put("TOTAL", String.valueOf(updatedDriver.getTotalScore()));
+            data.add(row);
+        }
+
+        finishTable.setItems(data);
+        // Auto-resize
+        finishTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
     private void resetCars() {
@@ -304,7 +367,7 @@ public class RaceController {
     private void loadStatsBox() {
         statsBox.getItems().add("Carrera actual");
         for (int i = 0; i < currentRace; i++) {
-            statsBox.getItems().add("Resultados carrera " + (i +1));
+            statsBox.getItems().add("Resultados carrera " + (i + 1));
 
         }
         statsBox.getItems().add("Campeonato general");
@@ -342,8 +405,8 @@ public class RaceController {
             points3Label.setText("Puntos:  " + updateDriversList.get(2).getTotalScore());
             points4Label.setText("Puntos:  " + updateDriversList.get(3).getTotalScore());
         } else if (selectedStatValue.startsWith("Resultados carrera ")) {
-            int currentSearchRace = (checkPreviousRaces(selectedStatValue) -1) ;
-            ArrayList<Driver> resultsRace= Championship.getInstance().getRaces()[currentSearchRace].getUpdatePositionsList();
+            int currentSearchRace = (checkPreviousRaces(selectedStatValue) - 1);
+            ArrayList<Driver> resultsRace = Championship.getInstance().getRaces()[currentSearchRace].getUpdatePositionsList();
             position1Label.setText("1º - " + resultsRace.get(0).getNickName());
             position2Label.setText("2º - " + resultsRace.get(1).getNickName());
             position3Label.setText("3º - " + resultsRace.get(2).getNickName());
@@ -402,9 +465,8 @@ public class RaceController {
         }
     }
 
-
     private ArrayList<Driver> getGlobalStats() {
-        ArrayList<Driver> updateGlobalStats =new ArrayList<>(Championship.getInstance().getRaces()[currentRace].getDriverList()) ;
+        ArrayList<Driver> updateGlobalStats = new ArrayList<>(Championship.getInstance().getRaces()[currentRace].getDriverList());
         for (int i = 0; i < updateGlobalStats.size(); i++) {
             updateGlobalStats.sort(new Comparator<Driver>() {
                 @Override
@@ -505,7 +567,7 @@ public class RaceController {
         cubeResultLabel.setText("Potencia base:");
         checkAnswer(selectedAnswer);
         updateAcumulateBonusQuestion();
-        if (checkDamageCar()){
+        if (checkDamageCar()) {
             currentPlayer++;
             selectedAnswer = -1;
             return;
@@ -544,7 +606,7 @@ public class RaceController {
         hideFeedbackLabel();
         switch (difficult) {
             case "FÁCIL" -> {
-                if (checkDamageCar() && checkDamageCar()){
+                if (checkDamageCar() && checkDamageCar()) {
                     currentPlayer++;
                     return;
                 }
@@ -557,7 +619,7 @@ public class RaceController {
                 }
             }
             case "NORMAL" -> {
-                if (checkDamageCar()){
+                if (checkDamageCar()) {
                     currentPlayer++;
                     selectedAnswer = -1;
                     return;
@@ -571,7 +633,7 @@ public class RaceController {
                 }
             }
             case "DIFÍCIL" -> {
-                if (checkDamageCar()){
+                if (checkDamageCar()) {
                     currentPlayer++;
                     selectedAnswer = -1;
                     return;
@@ -657,12 +719,12 @@ public class RaceController {
 
     }
 
-    private boolean checkDamageCar(){
+    private boolean checkDamageCar() {
         int carEndurance = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getHardness();
         int luckDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getLuck();
         int totalPoints = carEndurance + luckDriver;
-        int randomDamage = (int)(Math.random() *20);
-        if (randomDamage > totalPoints){
+        int randomDamage = (int) (Math.random() * 20);
+        if (randomDamage > totalPoints) {
             String nameDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getNickName();
             feedBackLabel.setText(nameDriver + " tiene problemas mecánicos y no puede moverse");
             feedBackLabel.setVisible(true);
@@ -727,14 +789,15 @@ public class RaceController {
         return currentPosition / circuitLength;  // 0.0 → 1.0
     }
 
-    private void resetAccumulateCombo(){
-        for (int i = 0; i <comboAcumulateMap.size(); i++) {
+    private void resetAccumulateCombo() {
+        for (int i = 0; i < comboAcumulateMap.size(); i++) {
             Label label = comboAcumulateMap.get(i);
             label.setText(String.valueOf(Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).getCombo()));
         }
     }
-    private void resetKmDrivers(){
-        for (int i = 0; i <kmPlayersMap.size(); i++) {
+
+    private void resetKmDrivers() {
+        for (int i = 0; i < kmPlayersMap.size(); i++) {
             Label label = kmPlayersMap.get(i);
             label.setText(String.valueOf(Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).getCar().getKilometers()));
         }
@@ -758,6 +821,7 @@ public class RaceController {
         }
         Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList().get(3).setRaceScores(0, currentRace);
     }
+
     private void showWinnerPodium() {
         if (currentRace == Championship.getInstance().getRaces().length - 1) {
             nextRaceBtn.setText("Resultados del campeonato");
@@ -773,7 +837,6 @@ public class RaceController {
         podium3Image.setImage(updatedOrderDrivers.get(2).getImage());
         podiumBox.setVisible(true);
     }
-
 
     private void checkAnswer(int userSelection) {
         //TODO: Actualizar variable boolean test acertado
