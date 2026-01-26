@@ -216,10 +216,10 @@ public class RaceController {
         feedBackLabel.setVisible(true);
         roundsBox.setVisible(true);
         statsBox.getItems().clear();
-        currentPlayer = 1;
+        currentPlayer = 0;
         currentRace++;
         resetAllParams();
-        updateKmDriverLabel();
+        resetKmDrivers();
         resetAccumulateCombo();
         loadCurrentRound();
         loadStatsBox();
@@ -302,7 +302,7 @@ public class RaceController {
     private void loadStatsBox() {
         statsBox.getItems().add("Carrera actual");
         for (int i = 0; i < currentRace; i++) {
-            statsBox.getItems().add("Resultados carrera " + currentRace);
+            statsBox.getItems().add("Resultados carrera " + (i +1));
 
         }
         statsBox.getItems().add("Campeonato general");
@@ -340,16 +340,16 @@ public class RaceController {
             points3Label.setText("Puntos:  " + updateDriversList.get(2).getTotalScore());
             points4Label.setText("Puntos:  " + updateDriversList.get(3).getTotalScore());
         } else if (selectedStatValue.startsWith("Resultados carrera ")) {
-            int currentSearchRace = checkPreviousRaces(selectedStatValue);
-            Driver[] resultsRace = Championship.getInstance().getRaces()[currentSearchRace].getResultRace();
-            position1Label.setText("1º - " + resultsRace[0].getNickName());
-            position2Label.setText("2º - " + resultsRace[1].getNickName());
-            position3Label.setText("3º - " + resultsRace[2].getNickName());
-            position4Label.setText("4º - " + resultsRace[3].getNickName());
-            points1Label.setText("Puntos:  " + resultsRace[0].getRaceScores()[0]);
-            points2Label.setText("Puntos:  " + resultsRace[1].getRaceScores()[1]);
-            points3Label.setText("Puntos:  " + resultsRace[2].getRaceScores()[2]);
-            points4Label.setText("Puntos:  " + resultsRace[3].getRaceScores()[3]);
+            int currentSearchRace = (checkPreviousRaces(selectedStatValue) -1) ;
+            ArrayList<Driver> resultsRace= Championship.getInstance().getRaces()[currentSearchRace].getUpdatePositionsList();
+            position1Label.setText("1º - " + resultsRace.get(0).getNickName());
+            position2Label.setText("2º - " + resultsRace.get(1).getNickName());
+            position3Label.setText("3º - " + resultsRace.get(2).getNickName());
+            position4Label.setText("4º - " + resultsRace.get(3).getNickName());
+            points1Label.setText("Puntos:  " + resultsRace.get(0).getRaceScores()[currentSearchRace]);
+            points2Label.setText("Puntos:  " + resultsRace.get(1).getRaceScores()[currentSearchRace]);
+            points3Label.setText("Puntos:  " + resultsRace.get(2).getRaceScores()[currentSearchRace]);
+            points4Label.setText("Puntos:  " + resultsRace.get(3).getRaceScores()[currentSearchRace]);
         }
     }
 
@@ -391,11 +391,10 @@ public class RaceController {
             String numStr = raceItem.substring("Resultados carrera ".length()).trim();
             System.out.println("DEBUG: numStr = '" + numStr + "'");  // ← Para debug
 
-            int raceNumber = Integer.parseInt(numStr);
-            int index = raceNumber - 1;
-            System.out.println("DEBUG: raceNumber=" + raceNumber + ", index=" + index);
+            int raceNumber = Integer.parseInt(String.valueOf(numStr.charAt((numStr.length() - 1))));
+            System.out.println("DEBUG: raceNumber=" + raceNumber + ", index=" + raceNumber);
 
-            return index;
+            return raceNumber;
         } catch (Exception e) {
             System.out.println("DEBUG: Parse error: " + e.getMessage());
             return -1;
@@ -404,13 +403,13 @@ public class RaceController {
 
 
     private ArrayList<Driver> getGlobalStats() {
-        ArrayList<Driver> updateGlobalStats = Championship.getInstance().getRaces()[currentRace].getDriverList();
+        ArrayList<Driver> updateGlobalStats =new ArrayList<>(Championship.getInstance().getRaces()[currentRace].getDriverList()) ;
         for (int i = 0; i < updateGlobalStats.size(); i++) {
             updateGlobalStats.sort(new Comparator<Driver>() {
                 @Override
                 public int compare(Driver o1, Driver o2) {
                     if (o1.getTotalScore() > o2.getTotalScore()) {
-                        return 0;
+                        return -1;
                     }
                     return 1;
                 }
@@ -420,7 +419,7 @@ public class RaceController {
     }
 
     private ArrayList<Driver> getCurrentPositions() {
-        ArrayList<Driver> updateDriversList = Championship.getInstance().getRaces()[currentRace].getDriverList();
+        ArrayList<Driver> updateDriversList = Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList();
         for (int i = 0; i < updateDriversList.size(); i++) {
             updateDriversList.sort(new Comparator<Driver>() {
                 @Override
@@ -638,6 +637,8 @@ public class RaceController {
 
     }
 
+
+
     private void updateKmDriverLabel() {
         updateStatsArea();
         Label kmLabel = kmPlayersMap.get(currentPlayer);
@@ -699,12 +700,17 @@ public class RaceController {
             label.setText(String.valueOf(Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).getCombo()));
         }
     }
+    private void resetKmDrivers(){
+        for (int i = 0; i <kmPlayersMap.size(); i++) {
+            Label label = kmPlayersMap.get(i);
+            label.setText(String.valueOf(Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).getCar().getKilometers()));
+        }
+    }
 
     private void checkReachGoal() {
         double percentage = getPercentageRace();
         if (percentage >= 1) {
             System.out.println("FIN DE CARRERA");
-            setResultsRace();
             setRacePoints();
             showWinnerPodium();
         }
@@ -713,24 +719,17 @@ public class RaceController {
     private void setRacePoints() {
         int totalPoints = 10;
         for (int i = 0; i < 3; i++) {
-            Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).setRaceScores(totalPoints, currentRace);
-            Championship.getInstance().getRaces()[currentRace].getDriverList().get(i).increaseTotalScore(totalPoints);
+            Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList().get(i).setRaceScores(totalPoints, currentRace);
+            Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList().get(i).increaseTotalScore(totalPoints);
             totalPoints -= 2;
         }
-        Championship.getInstance().getRaces()[currentRace].getDriverList().get(3).setRaceScores(0, currentRace);
+        Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList().get(3).setRaceScores(0, currentRace);
     }
-
-    private void setResultsRace() {
-        ArrayList<Driver> updatedOrderDrivers = getCurrentPositions();
-        Driver[] drivers = updatedOrderDrivers.toArray(new Driver[0]);
-        Championship.getInstance().getRaces()[currentRace].setResultRace(drivers);
-    }
-
     private void showWinnerPodium() {
         if (currentRace == Championship.getInstance().getRaces().length - 1) {
             nextRaceBtn.setText("Resultados del campeonato");
         }
-        String winnerName = Championship.getInstance().getRaces()[currentRace].getResultRace()[0].getNickName();
+        String winnerName = Championship.getInstance().getRaces()[currentRace].getUpdatePositionsList().get(0).getNickName();
         winnerLabel.setText("🎉🎉🎉  ¡¡¡Enhorabuena " + winnerName + "!!!  🎉🎉🎉");
         feedBackLabel.setVisible(false);
         roundsBox.setVisible(false);

@@ -400,6 +400,7 @@ public class SelectTeamController {
         int numRaces = Championship.getInstance().getRaces().length;
         for (int i = 0; i < numRaces; i++) {
             Championship.getInstance().getRaces()[i].getDriverList().add(cpuDriver);
+            Championship.getInstance().getRaces()[i].getUpdatePositionsList().add(cpuDriver);
         }
     }
 
