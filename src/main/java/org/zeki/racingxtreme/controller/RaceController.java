@@ -125,6 +125,7 @@ public class RaceController {
     ArrayList<ImageView> carsImages = new ArrayList<>();
     Random random = new Random();
     private int frameAnimation = 0;
+    private boolean answerChecked = false;
     int currentRace = 0;
     int currentPlayer = 0;
     int currentQuestion = -1;
@@ -228,18 +229,19 @@ public class RaceController {
         currentQuestion = question.getIdQuestion();
         Championship.getInstance().getUsedIds().add(question.getIdQuestion());
         setLabelsQuestion(question);
+        for (Node node : answersBox.getChildren()) {
+            node.getStyleClass().remove("rightCard");
+            node.getStyleClass().remove("answerSelected");
+        }
+
     }
 
     private void setLabelsQuestion(Question question) {
         questionLabel.setText(question.getTitle());
-        List<Answer> answerList = Arrays.asList(question.getAnswers());
-        Collections.shuffle(answerList);
-        question.setAnswers(answerList.toArray(new Answer[0]));
-
-        answer1Label.setText(answerList.get(0).getContent());
-        answer2Label.setText(answerList.get(1).getContent());
-        answer3Label.setText(answerList.get(2).getContent());
-        answer4Label.setText(answerList.get(3).getContent());
+        answer1Label.setText(question.getAnswers()[0].getContent());
+        answer2Label.setText(question.getAnswers()[1].getContent());
+        answer3Label.setText(question.getAnswers()[2].getContent());
+        answer4Label.setText(question.getAnswers()[3].getContent());
     }
 
     private void checkAnswer() {
@@ -247,27 +249,31 @@ public class RaceController {
         for (Question question : questionList) {
             if (question.getIdQuestion() == currentQuestion) {
                 showRightAnswer(question);
-                if (selectedAnswer == -1) {
 
+                if (selectedAnswer == -1) {
                 } else if (question.getAnswers()[selectedAnswer].isCorrect()) {
                     Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).setRightQuestion(true);
                     return;
                 }
+                break;
             }
         }
         Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).setRightQuestion(false);
     }
 
+
     private void showRightAnswer(Question question) {
-        int correctAnswer = 0;
-        Question q = question;
-        for (int i = 0; i < q.getAnswers().length; i++) {
-            if (q.getAnswers()[i].isCorrect()) {
-                correctAnswer = i;
+        for (Node node : answersBox.getChildren()) {
+            node.getStyleClass().remove("rightCard");
+        }
+        for (int i = 0; i < question.getAnswers().length; i++) {
+            if (question.getAnswers()[i].isCorrect()) {
+                answersBox.getChildren().get(i).getStyleClass().add("rightCard");
+                break;  // Solo 1
             }
         }
-        answersBox.getChildren().get(correctAnswer).getStyleClass().add("rightCard");
     }
+
 
     private void startNewRace() {
         if (currentRace == Championship.getInstance().getRaces().length - 1) {
@@ -475,7 +481,6 @@ public class RaceController {
     private void removeSelectedItem() {
         for (Node node : answersBox.getChildren()) {
             node.getStyleClass().remove("answerSelected");
-            node.getStyleClass().remove("rightCard");
         }
     }
 
@@ -589,6 +594,7 @@ public class RaceController {
 
     private void startQuestionTimer() {
         final int[] reamining = {10};
+        answerChecked = false;
         timeLabel.setText(String.valueOf(reamining[0]));
 
         questionTimer = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
@@ -610,9 +616,14 @@ public class RaceController {
         timeLabel.setVisible(false);
         answersBox.setDisable(true);
         cubeResultLabel.setText("Potencia base:");
-        checkAnswer();
+
+        if (!answerChecked) {  // ← Solo UNA vez por pregunta
+            checkAnswer();
+            answerChecked = true;
+        }
         updateAcumulateBonusQuestion();
         if (checkDamageCar()) {
+            feedBackLabel.setVisible(true);
             currentPlayer++;
             selectedAnswer = -1;
             return;
@@ -629,6 +640,7 @@ public class RaceController {
         if (currentPlayer < Championship.getInstance().getPlayersNumber()) {
             showCubePane();
             removeSelectedItem();
+
             answersBox.setDisable(false);
         } else if (currentPlayer < Championship.getInstance().getRaces()[currentRace].getDriverList().size()) {
             cpuGame();
@@ -767,7 +779,7 @@ public class RaceController {
         int carEndurance = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getHardness();
         int luckDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getLuck();
         int totalPoints = carEndurance + luckDriver;
-        int randomDamage = (int) (Math.random() * 18);
+        int randomDamage = (int) (Math.random() * 17);
         if (randomDamage > totalPoints) {
             String nameDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getNickName();
             feedBackLabel.setText(nameDriver + " tiene problemas mecánicos y no puede moverse");
@@ -885,5 +897,3 @@ public class RaceController {
 
 
 }
-
-
