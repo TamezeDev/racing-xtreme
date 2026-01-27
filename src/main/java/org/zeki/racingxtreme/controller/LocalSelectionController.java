@@ -84,7 +84,7 @@ public class LocalSelectionController {
         String questionsFilePath = null;
         switch (gameMode) {
             case "STANDARD" -> questionsFilePath = "/question/questionF1.json";
-            case "DEVELOPERS" -> questionsFilePath = "/question/questionDeveloper.json";
+            case "DEVELOPERS" -> questionsFilePath = "/question/questionDevelopers.json";
         }
         try {
             if (questionsFilePath != null) {

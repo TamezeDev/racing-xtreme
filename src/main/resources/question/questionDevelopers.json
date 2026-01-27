@@ -1,0 +1,6602 @@
+[
+  {
+    "idQuestion": 1,
+    "title": "¿Qué palabra clave se usa para crear una clase en Java?",
+    "answers": [
+      {
+        "content": "class",
+        "correct": true
+      },
+      {
+        "content": "object",
+        "correct": false
+      },
+      {
+        "content": "public",
+        "correct": false
+      },
+      {
+        "content": "main",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 2,
+    "title": "¿Qué método es el punto de entrada en Java?",
+    "answers": [
+      {
+        "content": "public static void main(String[] args)",
+        "correct": true
+      },
+      {
+        "content": "public void start()",
+        "correct": false
+      },
+      {
+        "content": "static main()",
+        "correct": false
+      },
+      {
+        "content": "void main()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 3,
+    "title": "¿Qué es un String en Java?",
+    "answers": [
+      {
+        "content": "Una clase para cadenas de texto",
+        "correct": true
+      },
+      {
+        "content": "Un tipo primitivo",
+        "correct": false
+      },
+      {
+        "content": "Un array de chars",
+        "correct": false
+      },
+      {
+        "content": "Una interfaz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 4,
+    "title": "¿Cuál es la sentencia para imprimir en consola?",
+    "answers": [
+      {
+        "content": "System.out.println()",
+        "correct": true
+      },
+      {
+        "content": "print()",
+        "correct": false
+      },
+      {
+        "content": "Console.write()",
+        "correct": false
+      },
+      {
+        "content": "echo()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 5,
+    "title": "¿Qué es una variable en Java?",
+    "answers": [
+      {
+        "content": "Un espacio en memoria con un nombre y tipo",
+        "correct": true
+      },
+      {
+        "content": "Una función",
+        "correct": false
+      },
+      {
+        "content": "Un objeto",
+        "correct": false
+      },
+      {
+        "content": "Una clase",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 6,
+    "title": "¿Cuál es el tipo primitivo para números enteros?",
+    "answers": [
+      {
+        "content": "int",
+        "correct": true
+      },
+      {
+        "content": "Integer",
+        "correct": false
+      },
+      {
+        "content": "number",
+        "correct": false
+      },
+      {
+        "content": "long",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 7,
+    "title": "¿Qué sentencia se usa para leer del teclado?",
+    "answers": [
+      {
+        "content": "Scanner sc = new Scanner(System.in)",
+        "correct": true
+      },
+      {
+        "content": "Input.readLine()",
+        "correct": false
+      },
+      {
+        "content": "Console.read()",
+        "correct": false
+      },
+      {
+        "content": "read()",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 8,
+    "title": "¿Qué es un bucle for?",
+    "answers": [
+      {
+        "content": "Repite código un número fijo de veces",
+        "correct": true
+      },
+      {
+        "content": "Repite mientras condición sea verdadera",
+        "correct": false
+      },
+      {
+        "content": "Salta código",
+        "correct": false
+      },
+      {
+        "content": "Elige una opción",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 9,
+    "title": "¿Qué hace if-else?",
+    "answers": [
+      {
+        "content": "Ejecuta código según condición",
+        "correct": true
+      },
+      {
+        "content": "Repite código",
+        "correct": false
+      },
+      {
+        "content": "Define función",
+        "correct": false
+      },
+      {
+        "content": "Crea objeto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 10,
+    "title": "¿Qué es un Array en Java?",
+    "answers": [
+      {
+        "content": "Colección de elementos del mismo tipo",
+        "correct": true
+      },
+      {
+        "content": "Clase para objetos",
+        "correct": false
+      },
+      {
+        "content": "Lista dinámica",
+        "correct": false
+      },
+      {
+        "content": "Mapa clave-valor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 11,
+    "title": "¿Qué consulta extrae datos en SQL?",
+    "answers": [
+      {
+        "content": "SELECT",
+        "correct": true
+      },
+      {
+        "content": "UPDATE",
+        "correct": false
+      },
+      {
+        "content": "DELETE",
+        "correct": false
+      },
+      {
+        "content": "INSERT",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 12,
+    "title": "¿Qué es PRIMARY KEY?",
+    "answers": [
+      {
+        "content": "Clave única e identificadora",
+        "correct": true
+      },
+      {
+        "content": "Clave duplicada",
+        "correct": false
+      },
+      {
+        "content": "Índice secundario",
+        "correct": false
+      },
+      {
+        "content": "Relación externa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 13,
+    "title": "¿Qué une tablas en SQL?",
+    "answers": [
+      {
+        "content": "JOIN",
+        "correct": true
+      },
+      {
+        "content": "UNION",
+        "correct": false
+      },
+      {
+        "content": "MERGE",
+        "correct": false
+      },
+      {
+        "content": "LINK",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 14,
+    "title": "¿Qué es FOREIGN KEY?",
+    "answers": [
+      {
+        "content": "Referencia a PRIMARY KEY de otra tabla",
+        "correct": true
+      },
+      {
+        "content": "Clave principal",
+        "correct": false
+      },
+      {
+        "content": "Índice único",
+        "correct": false
+      },
+      {
+        "content": "Valor nulo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 15,
+    "title": "¿Qué etiqueta abre documento HTML?",
+    "answers": [
+      {
+        "content": "<html>",
+        "correct": true
+      },
+      {
+        "content": "<head>",
+        "correct": false
+      },
+      {
+        "content": "<body>",
+        "correct": false
+      },
+      {
+        "content": "<div>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 16,
+    "title": "¿Qué es el atributo href?",
+    "answers": [
+      {
+        "content": "Enlace a URL",
+        "correct": true
+      },
+      {
+        "content": "Color de texto",
+        "correct": false
+      },
+      {
+        "content": "Tamaño fuente",
+        "correct": false
+      },
+      {
+        "content": "Posición",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 17,
+    "title": "¿Qué selector CSS por ID?",
+    "answers": [
+      {
+        "content": "#id",
+        "correct": true
+      },
+      {
+        "content": ".clase",
+        "correct": false
+      },
+      {
+        "content": "tag",
+        "correct": false
+      },
+      {
+        "content": "*",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 18,
+    "title": "¿Qué es encapsulación en OOP?",
+    "answers": [
+      {
+        "content": "Ocultar detalles internos",
+        "correct": true
+      },
+      {
+        "content": "Heredar propiedades",
+        "correct": false
+      },
+      {
+        "content": "Múltiples formas",
+        "correct": false
+      },
+      {
+        "content": "Objetos independientes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 19,
+    "title": "¿Qué palabra clave para herencia Java?",
+    "answers": [
+      {
+        "content": "extends",
+        "correct": true
+      },
+      {
+        "content": "implements",
+        "correct": false
+      },
+      {
+        "content": "super",
+        "correct": false
+      },
+      {
+        "content": "this",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 20,
+    "title": "¿Qué es polimorfismo?",
+    "answers": [
+      {
+        "content": "Múltiples formas del mismo método",
+        "correct": true
+      },
+      {
+        "content": "Un solo objeto múltiples clases",
+        "correct": false
+      },
+      {
+        "content": "Ocultar datos",
+        "correct": false
+      },
+      {
+        "content": "Herencia múltiple",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 21,
+    "title": "¿Qué es un constructor en Java?",
+    "answers": [
+      {
+        "content": "Método especial para inicializar objetos",
+        "correct": true
+      },
+      {
+        "content": "Método destructor",
+        "correct": false
+      },
+      {
+        "content": "Función estática",
+        "correct": false
+      },
+      {
+        "content": "Propiedad clase",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 22,
+    "title": "¿Qué significa static en Java?",
+    "answers": [
+      {
+        "content": "Pertenece a la clase no instancia",
+        "correct": true
+      },
+      {
+        "content": "Solo una vez por objeto",
+        "correct": false
+      },
+      {
+        "content": "Final inmutable",
+        "correct": false
+      },
+      {
+        "content": "Abstracto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 23,
+    "title": "¿Qué es try-catch?",
+    "answers": [
+      {
+        "content": "Manejo de excepciones",
+        "correct": true
+      },
+      {
+        "content": "Bucle condicional",
+        "correct": false
+      },
+      {
+        "content": "Herencia",
+        "correct": false
+      },
+      {
+        "content": "Array",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 24,
+    "title": "¿Qué es una interfaz en Java?",
+    "answers": [
+      {
+        "content": "Contrato de métodos sin implementación",
+        "correct": true
+      },
+      {
+        "content": "Clase abstracta",
+        "correct": false
+      },
+      {
+        "content": "Objeto concreto",
+        "correct": false
+      },
+      {
+        "content": "Paquete",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 25,
+    "title": "¿Qué diferencia INNER JOIN?",
+    "answers": [
+      {
+        "content": "Coincidencias en ambas tablas",
+        "correct": true
+      },
+      {
+        "content": "Todo de izquierda + coincidencias",
+        "correct": false
+      },
+      {
+        "content": "Solo coincidencias NULL",
+        "correct": false
+      },
+      {
+        "content": "Une por múltiples claves",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 26,
+    "title": "¿Qué es INDEX en BD?",
+    "answers": [
+      {
+        "content": "Estructura acelera consultas",
+        "correct": true
+      },
+      {
+        "content": "Clave primaria",
+        "correct": false
+      },
+      {
+        "content": "Vista tabla",
+        "correct": false
+      },
+      {
+        "content": "Trigger",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 27,
+    "title": "¿Qué etiqueta para lista desordenada?",
+    "answers": [
+      {
+        "content": "<ul>",
+        "correct": true
+      },
+      {
+        "content": "<ol>",
+        "correct": false
+      },
+      {
+        "content": "<li>",
+        "correct": false
+      },
+      {
+        "content": "<dl>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 28,
+    "title": "¿Qué propiedad CSS centra texto?",
+    "answers": [
+      {
+        "content": "text-align: center",
+        "correct": true
+      },
+      {
+        "content": "margin: auto",
+        "correct": false
+      },
+      {
+        "content": "align: center",
+        "correct": false
+      },
+      {
+        "content": "float: center",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 29,
+    "title": "¿Qué es final en Java?",
+    "answers": [
+      {
+        "content": "No se puede modificar",
+        "correct": true
+      },
+      {
+        "content": "Estático",
+        "correct": false
+      },
+      {
+        "content": "Abstracto",
+        "correct": false
+      },
+      {
+        "content": "Protected",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 30,
+    "title": "¿Qué es NORMALIZACIÓN en BD?",
+    "answers": [
+      {
+        "content": "Evitar redundancia datos",
+        "correct": true
+      },
+      {
+        "content": "Aumentar duplicados",
+        "correct": false
+      },
+      {
+        "content": "Unir tablas",
+        "correct": false
+      },
+      {
+        "content": "Crear índices",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 31,
+    "title": "¿Qué es herencia en OOP?",
+    "answers": [
+      {
+        "content": "Una clase hereda propiedades de otra",
+        "correct": true
+      },
+      {
+        "content": "Múltiples objetos",
+        "correct": false
+      },
+      {
+        "content": "Ocultar datos",
+        "correct": false
+      },
+      {
+        "content": "Métodos iguales",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 32,
+    "title": "¿Qué palabra clave para implementar interfaz?",
+    "answers": [
+      {
+        "content": "implements",
+        "correct": true
+      },
+      {
+        "content": "extends",
+        "correct": false
+      },
+      {
+        "content": "super",
+        "correct": false
+      },
+      {
+        "content": "abstract",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 33,
+    "title": "¿Qué es sobrecarga de métodos?",
+    "answers": [
+      {
+        "content": "Mismo nombre, parámetros distintos",
+        "correct": true
+      },
+      {
+        "content": "Método sobrescrito",
+        "correct": false
+      },
+      {
+        "content": "Método estático",
+        "correct": false
+      },
+      {
+        "content": "Constructor único",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 34,
+    "title": "¿Qué consulta inserta en SQL?",
+    "answers": [
+      {
+        "content": "INSERT INTO",
+        "correct": true
+      },
+      {
+        "content": "UPDATE SET",
+        "correct": false
+      },
+      {
+        "content": "SELECT FROM",
+        "correct": false
+      },
+      {
+        "content": "DELETE FROM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 35,
+    "title": "¿Qué es GROUP BY?",
+    "answers": [
+      {
+        "content": "Agrupa resultados por columna",
+        "correct": true
+      },
+      {
+        "content": "Ordena resultados",
+        "correct": false
+      },
+      {
+        "content": "Filtra duplicados",
+        "correct": false
+      },
+      {
+        "content": "Une tablas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 36,
+    "title": "¿Qué etiqueta para tabla?",
+    "answers": [
+      {
+        "content": "<table>",
+        "correct": true
+      },
+      {
+        "content": "<tr>",
+        "correct": false
+      },
+      {
+        "content": "<td>",
+        "correct": false
+      },
+      {
+        "content": "<thead>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 37,
+    "title": "¿Qué propiedad CSS para fondo?",
+    "answers": [
+      {
+        "content": "background-color",
+        "correct": true
+      },
+      {
+        "content": "color",
+        "correct": false
+      },
+      {
+        "content": "border",
+        "correct": false
+      },
+      {
+        "content": "padding",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 38,
+    "title": "¿Qué es abstract class?",
+    "answers": [
+      {
+        "content": "Clase con métodos abstractos",
+        "correct": true
+      },
+      {
+        "content": "Clase final",
+        "correct": false
+      },
+      {
+        "content": "Interfaz",
+        "correct": false
+      },
+      {
+        "content": "Clase estática",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 39,
+    "title": "¿Qué es sobrescritura?",
+    "answers": [
+      {
+        "content": "Redefinir método padre",
+        "correct": true
+      },
+      {
+        "content": "Sobrecargar método",
+        "correct": false
+      },
+      {
+        "content": "Crear nuevo método",
+        "correct": false
+      },
+      {
+        "content": "Eliminar método",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 40,
+    "title": "¿Qué es LEFT JOIN?",
+    "answers": [
+      {
+        "content": "Izquierda + coincidencias derecha",
+        "correct": true
+      },
+      {
+        "content": "Solo coincidencias",
+        "correct": false
+      },
+      {
+        "content": "Derecha + coincidencias izquierda",
+        "correct": false
+      },
+      {
+        "content": "Todo menos coincidencias",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 41,
+    "title": "¿Qué es flexbox CSS?",
+    "answers": [
+      {
+        "content": "Layout unidimensional flexible",
+        "correct": true
+      },
+      {
+        "content": "Posicionamiento absoluto",
+        "correct": false
+      },
+      {
+        "content": "Grid bidimensional",
+        "correct": false
+      },
+      {
+        "content": "Float tradicional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 42,
+    "title": "¿Qué es ArrayList?",
+    "answers": [
+      {
+        "content": "Lista dinámica tamaño variable",
+        "correct": true
+      },
+      {
+        "content": "Array fijo",
+        "correct": false
+      },
+      {
+        "content": "Set sin duplicados",
+        "correct": false
+      },
+      {
+        "content": "Mapa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 43,
+    "title": "¿Qué consulta actualiza SQL?",
+    "answers": [
+      {
+        "content": "UPDATE",
+        "correct": true
+      },
+      {
+        "content": "ALTER",
+        "correct": false
+      },
+      {
+        "content": "MODIFY",
+        "correct": false
+      },
+      {
+        "content": "CHANGE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 44,
+    "title": "¿Qué es responsive design?",
+    "answers": [
+      {
+        "content": "Se adapta a pantallas diferentes",
+        "correct": true
+      },
+      {
+        "content": "Solo móvil",
+        "correct": false
+      },
+      {
+        "content": "Solo desktop",
+        "correct": false
+      },
+      {
+        "content": "Animaciones",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 45,
+    "title": "¿Qué es this en Java?",
+    "answers": [
+      {
+        "content": "Referencia al objeto actual",
+        "correct": true
+      },
+      {
+        "content": "Objeto padre",
+        "correct": false
+      },
+      {
+        "content": "Clase estática",
+        "correct": false
+      },
+      {
+        "content": "Superclase",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 46,
+    "title": "¿Qué es HAVING?",
+    "answers": [
+      {
+        "content": "Filtro grupos después GROUP BY",
+        "correct": true
+      },
+      {
+        "content": "Filtro filas WHERE",
+        "correct": false
+      },
+      {
+        "content": "Ordena resultados",
+        "correct": false
+      },
+      {
+        "content": "Limita filas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 47,
+    "title": "¿Qué etiqueta para enlace?",
+    "answers": [
+      {
+        "content": "<a>",
+        "correct": true
+      },
+      {
+        "content": "<link>",
+        "correct": false
+      },
+      {
+        "content": "<href>",
+        "correct": false
+      },
+      {
+        "content": "<url>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 48,
+    "title": "¿Qué es garbage collector?",
+    "answers": [
+      {
+        "content": "Libera memoria objetos no usados",
+        "correct": true
+      },
+      {
+        "content": "Crea objetos",
+        "correct": false
+      },
+      {
+        "content": "Compila código",
+        "correct": false
+      },
+      {
+        "content": "Ejecuta threads",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 49,
+    "title": "¿Qué diferencia ArrayList vs LinkedList?",
+    "answers": [
+      {
+        "content": "ArrayList acceso rápido por índice",
+        "correct": true
+      },
+      {
+        "content": "LinkedList más lento acceso",
+        "correct": false
+      },
+      {
+        "content": "Ambas iguales",
+        "correct": false
+      },
+      {
+        "content": "LinkedList fijo tamaño",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 50,
+    "title": "¿Qué es VARCHAR?",
+    "answers": [
+      {
+        "content": "Cadena longitud variable",
+        "correct": true
+      },
+      {
+        "content": "Cadena fija",
+        "correct": false
+      },
+      {
+        "content": "Número entero",
+        "correct": false
+      },
+      {
+        "content": "Fecha",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 51,
+    "title": "¿Qué es JavaScript?",
+    "answers": [
+      {
+        "content": "Lenguaje cliente-side interactividad",
+        "correct": true
+      },
+      {
+        "content": "Backend server",
+        "correct": false
+      },
+      {
+        "content": "Base datos",
+        "correct": false
+      },
+      {
+        "content": "CSS estilos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 52,
+    "title": "¿Qué propiedad CSS margin?",
+    "answers": [
+      {
+        "content": "Espacio exterior elemento",
+        "correct": true
+      },
+      {
+        "content": "Espacio interior",
+        "correct": false
+      },
+      {
+        "content": "Borde",
+        "correct": false
+      },
+      {
+        "content": "Fondo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 53,
+    "title": "¿Qué es exception?",
+    "answers": [
+      {
+        "content": "Error runtime programa",
+        "correct": true
+      },
+      {
+        "content": "Error compilación",
+        "correct": false
+      },
+      {
+        "content": "Warning",
+        "correct": false
+      },
+      {
+        "content": "Bug lógico",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 54,
+    "title": "¿Qué es TRIGGER?",
+    "answers": [
+      {
+        "content": "Código ejecuta eventos BD",
+        "correct": true
+      },
+      {
+        "content": "Vista tabla",
+        "correct": false
+      },
+      {
+        "content": "Procedimiento almacenado",
+        "correct": false
+      },
+      {
+        "content": "Función",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 55,
+    "title": "¿Qué selector CSS clase?",
+    "answers": [
+      {
+        "content": ".clase",
+        "correct": true
+      },
+      {
+        "content": "#id",
+        "correct": false
+      },
+      {
+        "content": "tag",
+        "correct": false
+      },
+      {
+        "content": "> hijo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 56,
+    "title": "¿Qué es package?",
+    "answers": [
+      {
+        "content": "Organiza clases namespace",
+        "correct": true
+      },
+      {
+        "content": "Importa clases",
+        "correct": false
+      },
+      {
+        "content": "Clase principal",
+        "correct": false
+      },
+      {
+        "content": "Interfaz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 57,
+    "title": "¿Qué es ORDER BY?",
+    "answers": [
+      {
+        "content": "Ordena resultados",
+        "correct": true
+      },
+      {
+        "content": "Agrupa",
+        "correct": false
+      },
+      {
+        "content": "Filtra",
+        "correct": false
+      },
+      {
+        "content": "Limita",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 58,
+    "title": "¿Qué es <div>?",
+    "answers": [
+      {
+        "content": "Contenedor genérico bloques",
+        "correct": true
+      },
+      {
+        "content": "Enlace",
+        "correct": false
+      },
+      {
+        "content": "Imagen",
+        "correct": false
+      },
+      {
+        "content": "Formulario",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 59,
+    "title": "¿Qué diferencia public vs private?",
+    "answers": [
+      {
+        "content": "public accesible todo, private solo clase",
+        "correct": true
+      },
+      {
+        "content": "Ambos iguales",
+        "correct": false
+      },
+      {
+        "content": "private paquete, public clase",
+        "correct": false
+      },
+      {
+        "content": "public statico",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 60,
+    "title": "¿Qué es 1NF normalización?",
+    "answers": [
+      {
+        "content": "Valores atómicos sin repetición",
+        "correct": true
+      },
+      {
+        "content": "Eliminar dependencias parciales",
+        "correct": false
+      },
+      {
+        "content": "Eliminar transitivas",
+        "correct": false
+      },
+      {
+        "content": "BCNF avanzada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 61,
+    "title": "¿Qué es HashMap?",
+    "answers": [
+      {
+        "content": "Mapa clave-valor únicos",
+        "correct": true
+      },
+      {
+        "content": "Lista ordenada",
+        "correct": false
+      },
+      {
+        "content": "Set duplicados",
+        "correct": false
+      },
+      {
+        "content": "Queue FIFO",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 62,
+    "title": "¿Qué es media query CSS?",
+    "answers": [
+      {
+        "content": "@media para responsive",
+        "correct": true
+      },
+      {
+        "content": "Selector atributo",
+        "correct": false
+      },
+      {
+        "content": "Pseudo-clase",
+        "correct": false
+      },
+      {
+        "content": "Animación",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 63,
+    "title": "¿Qué lanza NullPointerException?",
+    "answers": [
+      {
+        "content": "Acceder objeto null",
+        "correct": true
+      },
+      {
+        "content": "División cero",
+        "correct": false
+      },
+      {
+        "content": "Array índice inválido",
+        "correct": false
+      },
+      {
+        "content": "Cast inválido",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 64,
+    "title": "¿Qué es stored procedure?",
+    "answers": [
+      {
+        "content": "Código SQL compilado BD",
+        "correct": true
+      },
+      {
+        "content": "Vista dinámica",
+        "correct": false
+      },
+      {
+        "content": "Función Java",
+        "correct": false
+      },
+      {
+        "content": "Trigger evento",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 65,
+    "title": "¿Qué es position: relative CSS?",
+    "answers": [
+      {
+        "content": "Relativo posición normal",
+        "correct": true
+      },
+      {
+        "content": "Fuera flujo",
+        "correct": false
+      },
+      {
+        "content": "Fijo viewport",
+        "correct": false
+      },
+      {
+        "content": "Absoluto padre",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 66,
+    "title": "¿Qué es lambda expression Java?",
+    "answers": [
+      {
+        "content": "Función anónima corta",
+        "correct": true
+      },
+      {
+        "content": "Clase anónima",
+        "correct": false
+      },
+      {
+        "content": "Método estático",
+        "correct": false
+      },
+      {
+        "content": "Interfaz funcional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 67,
+    "title": "¿Qué es subconsulta SQL?",
+    "answers": [
+      {
+        "content": "SELECT dentro otra consulta",
+        "correct": true
+      },
+      {
+        "content": "JOIN múltiples tablas",
+        "correct": false
+      },
+      {
+        "content": "UNION vertical",
+        "correct": false
+      },
+      {
+        "content": "CASE condicional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 68,
+    "title": "¿Qué es semantic HTML?",
+    "answers": [
+      {
+        "content": "Etiquetas con significado contenido",
+        "correct": true
+      },
+      {
+        "content": "Solo div span",
+        "correct": false
+      },
+      {
+        "content": "Estilos inline",
+        "correct": false
+      },
+      {
+        "content": "JavaScript puro",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 69,
+    "title": "¿Qué es Stream API?",
+    "answers": [
+      {
+        "content": "Procesar colecciones funciones",
+        "correct": true
+      },
+      {
+        "content": "Entrada salida archivos",
+        "correct": false
+      },
+      {
+        "content": "Threads paralelos",
+        "correct": false
+      },
+      {
+        "content": "Red sockets",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 70,
+    "title": "¿Qué es 2NF?",
+    "answers": [
+      {
+        "content": "1NF + sin dependencias parciales",
+        "correct": true
+      },
+      {
+        "content": "1NF + dependencias transitivas",
+        "correct": false
+      },
+      {
+        "content": "3NF completa",
+        "correct": false
+      },
+      {
+        "content": "Denormalizada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 71,
+    "title": "¿Qué es box model CSS?",
+    "answers": [
+      {
+        "content": "Content + padding + border + margin",
+        "correct": true
+      },
+      {
+        "content": "Solo ancho alto",
+        "correct": false
+      },
+      {
+        "content": "Flex items",
+        "correct": false
+      },
+      {
+        "content": "Grid areas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 72,
+    "title": "¿Qué es equals()?",
+    "answers": [
+      {
+        "content": "Compara contenido objetos",
+        "correct": true
+      },
+      {
+        "content": "Compara referencias",
+        "correct": false
+      },
+      {
+        "content": "Suma objetos",
+        "correct": false
+      },
+      {
+        "content": "Imprime objeto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 73,
+    "title": "¿Qué es UNION?",
+    "answers": [
+      {
+        "content": "Combina resultados vertical",
+        "correct": true
+      },
+      {
+        "content": "Combina horizontal JOIN",
+        "correct": false
+      },
+      {
+        "content": "Agrupa columnas",
+        "correct": false
+      },
+      {
+        "content": "Ordena",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 74,
+    "title": "¿Qué es <header>?",
+    "answers": [
+      {
+        "content": "Sección introductoria página",
+        "correct": true
+      },
+      {
+        "content": "Pie página",
+        "correct": false
+      },
+      {
+        "content": "Navegación",
+        "correct": false
+      },
+      {
+        "content": "Artículo principal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 75,
+    "title": "¿Qué es Optional?",
+    "answers": [
+      {
+        "content": "Contenedor valor o null",
+        "correct": true
+      },
+      {
+        "content": "Lista opcional",
+        "correct": false
+      },
+      {
+        "content": "Excepción opcional",
+        "correct": false
+      },
+      {
+        "content": "Parámetro opcional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 76,
+    "title": "¿Qué es CASCADE DELETE?",
+    "answers": [
+      {
+        "content": "Borra hijos al borrar padre",
+        "correct": true
+      },
+      {
+        "content": "Actualiza hijos",
+        "correct": false
+      },
+      {
+        "content": "Ignora hijos",
+        "correct": false
+      },
+      {
+        "content": "Bloquea borrado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 77,
+    "title": "¿Qué es z-index CSS?",
+    "answers": [
+      {
+        "content": "Orden apilado elementos",
+        "correct": true
+      },
+      {
+        "content": "Posición X",
+        "correct": false
+      },
+      {
+        "content": "Tamaño Z",
+        "correct": false
+      },
+      {
+        "content": "Profundidad 3D",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 78,
+    "title": "¿Qué es Thread?",
+    "answers": [
+      {
+        "content": "Hilo ejecución concurrente",
+        "correct": true
+      },
+      {
+        "content": "Proceso hijo",
+        "correct": false
+      },
+      {
+        "content": "Excepción thread",
+        "correct": false
+      },
+      {
+        "content": "Sincronización",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 79,
+    "title": "¿Qué es pivot table SQL?",
+    "answers": [
+      {
+        "content": "Filas a columnas con CASE/PIVOT",
+        "correct": true
+      },
+      {
+        "content": "Tabla normalizada",
+        "correct": false
+      },
+      {
+        "content": "JOIN múltiple",
+        "correct": false
+      },
+      {
+        "content": "Vista temporal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 80,
+    "title": "¿Qué es display: flex?",
+    "answers": [
+      {
+        "content": "Activa flexbox contenedor",
+        "correct": true
+      },
+      {
+        "content": "Grid layout",
+        "correct": false
+      },
+      {
+        "content": "Block normal",
+        "correct": false
+      },
+      {
+        "content": "Inline",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 81,
+    "title": "¿Qué es Collections.sort()?",
+    "answers": [
+      {
+        "content": "Ordena lista Comparable",
+        "correct": true
+      },
+      {
+        "content": "Busca elemento",
+        "correct": false
+      },
+      {
+        "content": "Elimina duplicados",
+        "correct": false
+      },
+      {
+        "content": "Invierte lista",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 82,
+    "title": "¿Qué es 3NF?",
+    "answers": [
+      {
+        "content": "2NF + sin dependencias transitivas",
+        "correct": true
+      },
+      {
+        "content": "1NF básica",
+        "correct": false
+      },
+      {
+        "content": "BCNF",
+        "correct": false
+      },
+      {
+        "content": "Denormalizada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 83,
+    "title": "¿Qué es ARIA?",
+    "answers": [
+      {
+        "content": "Accesibilidad web atributos",
+        "correct": true
+      },
+      {
+        "content": "Animaciones CSS",
+        "correct": false
+      },
+      {
+        "content": "Responsive images",
+        "correct": false
+      },
+      {
+        "content": "API JavaScript",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 84,
+    "title": "¿Qué es synchronized?",
+    "answers": [
+      {
+        "content": "Thread-safe método bloqueo",
+        "correct": true
+      },
+      {
+        "content": "Estático paralelo",
+        "correct": false
+      },
+      {
+        "content": "Asíncrono",
+        "correct": false
+      },
+      {
+        "content": "Volátil",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 85,
+    "title": "¿Qué es CTE?",
+    "answers": [
+      {
+        "content": "Common Table Expression temporal",
+        "correct": true
+      },
+      {
+        "content": "Create Table Engine",
+        "correct": false
+      },
+      {
+        "content": "Column Type Enum",
+        "correct": false
+      },
+      {
+        "content": "Cross Table Export",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 86,
+    "title": "¿Qué es grid-template-columns?",
+    "answers": [
+      {
+        "content": "Define columnas CSS Grid",
+        "correct": true
+      },
+      {
+        "content": "Filas grid",
+        "correct": false
+      },
+      {
+        "content": "Espaciado filas",
+        "correct": false
+      },
+      {
+        "content": "Alineación items",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 87,
+    "title": "¿Qué es enum?",
+    "answers": [
+      {
+        "content": "Tipo constantes nombradas",
+        "correct": true
+      },
+      {
+        "content": "Entero enum",
+        "correct": false
+      },
+      {
+        "content": "Clase enum",
+        "correct": false
+      },
+      {
+        "content": "Interfaz enum",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 88,
+    "title": "¿Qué es window function?",
+    "answers": [
+      {
+        "content": "ROW_NUMBER() OVER() funciones analíticas",
+        "correct": true
+      },
+      {
+        "content": "Función agregada GROUP BY",
+        "correct": false
+      },
+      {
+        "content": "Procedimiento",
+        "correct": false
+      },
+      {
+        "content": "Trigger",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 89,
+    "title": "¿Qué es canvas HTML?",
+    "answers": [
+      {
+        "content": "Dibujo 2D gráficos",
+        "correct": true
+      },
+      {
+        "content": "Formulario",
+        "correct": false
+      },
+      {
+        "content": "Video",
+        "correct": false
+      },
+      {
+        "content": "Audio",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 90,
+    "title": "¿Qué diferencia SQL vs NoSQL?",
+    "answers": [
+      {
+        "content": "SQL relacional tablas, NoSQL flexible",
+        "correct": true
+      },
+      {
+        "content": "Ambos relacionales",
+        "correct": false
+      },
+      {
+        "content": "SQL no escalable",
+        "correct": false
+      },
+      {
+        "content": "NoSQL solo JSON",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 91,
+    "title": "¿Qué es Serializable?",
+    "answers": [
+      {
+        "content": "Interfaz serializar objeto",
+        "correct": true
+      },
+      {
+        "content": "Comparable ordenar",
+        "correct": false
+      },
+      {
+        "content": "Runnable thread",
+        "correct": false
+      },
+      {
+        "content": "Cloneable copiar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 92,
+    "title": "¿Qué es full outer join?",
+    "answers": [
+      {
+        "content": "Todo ambas tablas coincidencias NULL",
+        "correct": true
+      },
+      {
+        "content": "Solo izquierda",
+        "correct": false
+      },
+      {
+        "content": "Solo coincidencias",
+        "correct": false
+      },
+      {
+        "content": "Derecha coincidencias",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 93,
+    "title": "¿Qué es @Override en Java?",
+    "answers": [
+      {
+        "content": "Anotación indicar sobrescritura método",
+        "correct": true
+      },
+      {
+        "content": "Modificador visibilidad",
+        "correct": false
+      },
+      {
+        "content": "Tipo retorno método",
+        "correct": false
+      },
+      {
+        "content": "Parámetro constructor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 94,
+    "title": "¿Qué hace transient en Serializable?",
+    "answers": [
+      {
+        "content": "Excluye campo serialización",
+        "correct": true
+      },
+      {
+        "content": "Incluye campo siempre",
+        "correct": false
+      },
+      {
+        "content": "Marca campo estático",
+        "correct": false
+      },
+      {
+        "content": "Define serialVersionUID",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 95,
+    "title": "¿Qué es LEFT JOIN en SQL?",
+    "answers": [
+      {
+        "content": "Tabla izquierda + coincidencias",
+        "correct": true
+      },
+      {
+        "content": "Solo coincidencias",
+        "correct": false
+      },
+      {
+        "content": "Tabla derecha completa",
+        "correct": false
+      },
+      {
+        "content": "Ambas tablas NULLs",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 96,
+    "title": "¿Qué es polimorfismo en Java?",
+    "answers": [
+      {
+        "content": "Mismo método comportamientos diferentes",
+        "correct": true
+      },
+      {
+        "content": "Herencia clases",
+        "correct": false
+      },
+      {
+        "content": "Ocultar datos privados",
+        "correct": false
+      },
+      {
+        "content": "Interfaces múltiples",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 97,
+    "title": "¿Qué anotación inicia Spring Boot?",
+    "answers": [
+      {
+        "content": "@SpringBootApplication",
+        "correct": true
+      },
+      {
+        "content": "@Controller",
+        "correct": false
+      },
+      {
+        "content": "@Service",
+        "correct": false
+      },
+      {
+        "content": "@Repository",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 98,
+    "title": "¿Qué es PRIMARY KEY en BD?",
+    "answers": [
+      {
+        "content": "Identificador único registro",
+        "correct": true
+      },
+      {
+        "content": "Clave foránea referencia",
+        "correct": false
+      },
+      {
+        "content": "Índice velocidad consultas",
+        "correct": false
+      },
+      {
+        "content": "Valor nulo permitido",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 99,
+    "title": "¿Qué es flexbox en CSS?",
+    "answers": [
+      {
+        "content": "Layout unidimensional flexible",
+        "correct": true
+      },
+      {
+        "content": "Layout bidimensional grid",
+        "correct": false
+      },
+      {
+        "content": "Posicionamiento absoluto",
+        "correct": false
+      },
+      {
+        "content": "Animaciones transiciones",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 100,
+    "title": "¿Qué método sobrescribir equals()?",
+    "answers": [
+      {
+        "content": "Comparar contenido objetos",
+        "correct": true
+      },
+      {
+        "content": "Copiar objeto",
+        "correct": false
+      },
+      {
+        "content": "Imprimir objeto",
+        "correct": false
+      },
+      {
+        "content": "Serializar objeto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 101,
+    "title": "¿Qué es @Autowired Spring?",
+    "answers": [
+      {
+        "content": "Inyección dependencias automática",
+        "correct": true
+      },
+      {
+        "content": "Mapeo JSON request",
+        "correct": false
+      },
+      {
+        "content": "Manejo excepciones",
+        "correct": false
+      },
+      {
+        "content": "Configuración puerto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 102,
+    "title": "¿Qué es GROUP BY SQL?",
+    "answers": [
+      {
+        "content": "Agrupar filas funciones agregadas",
+        "correct": true
+      },
+      {
+        "content": "Ordenar resultados",
+        "correct": false
+      },
+      {
+        "content": "Unir tablas",
+        "correct": false
+      },
+      {
+        "content": "Filtrar duplicados",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 103,
+    "title": "¿Qué es doctype HTML?",
+    "answers": [
+      {
+        "content": "Declara versión HTML documento",
+        "correct": true
+      },
+      {
+        "content": "Define estilos página",
+        "correct": false
+      },
+      {
+        "content": "Incluye scripts JavaScript",
+        "correct": false
+      },
+      {
+        "content": "Carga fuentes externas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 104,
+    "title": "¿Qué es serialVersionUID?",
+    "answers": [
+      {
+        "content": "Versión compatibilidad serialización",
+        "correct": true
+      },
+      {
+        "content": "ID objeto único",
+        "correct": false
+      },
+      {
+        "content": "Hash código objeto",
+        "correct": false
+      },
+      {
+        "content": "Tamaño bytes serializado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 105,
+    "title": "¿Qué es RIGHT JOIN?",
+    "answers": [
+      {
+        "content": "Tabla derecha + coincidencias",
+        "correct": true
+      },
+      {
+        "content": "Solo izquierda",
+        "correct": false
+      },
+      {
+        "content": "Ambas completas NULLs",
+        "correct": false
+      },
+      {
+        "content": "Solo coincidencias INNER",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 106,
+    "title": "¿Qué es ArrayList Java?",
+    "answers": [
+      {
+        "content": "Lista dinámica tamaño variable",
+        "correct": true
+      },
+      {
+        "content": "Array tamaño fijo",
+        "correct": false
+      },
+      {
+        "content": "Conjunto sin duplicados",
+        "correct": false
+      },
+      {
+        "content": "Mapa clave-valor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 107,
+    "title": "¿Qué puerto por defecto Spring Boot?",
+    "answers": [
+      {
+        "content": "8080",
+        "correct": true
+      },
+      {
+        "content": "80",
+        "correct": false
+      },
+      {
+        "content": "443",
+        "correct": false
+      },
+      {
+        "content": "3000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 108,
+    "title": "¿Qué es INDEX en base datos?",
+    "answers": [
+      {
+        "content": "Acelerador consultas rápidas",
+        "correct": true
+      },
+      {
+        "content": "Restricción unicidad",
+        "correct": false
+      },
+      {
+        "content": "Relación tablas",
+        "correct": false
+      },
+      {
+        "content": "Almacenamiento temporal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 109,
+    "title": "¿Qué es media query CSS?",
+    "answers": [
+      {
+        "content": "Estilos responsive breakpoints",
+        "correct": true
+      },
+      {
+        "content": "Animaciones keyframes",
+        "correct": false
+      },
+      {
+        "content": "Gradientes colores",
+        "correct": false
+      },
+      {
+        "content": "Sombras elementos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 110,
+    "title": "¿Qué es HashMap Java?",
+    "answers": [
+      {
+        "content": "Mapa clave-valor hash",
+        "correct": true
+      },
+      {
+        "content": "Lista ordenada",
+        "correct": false
+      },
+      {
+        "content": "Conjunto únicos",
+        "correct": false
+      },
+      {
+        "content": "Cola FIFO",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 111,
+    "title": "¿Qué es @Entity Spring JPA?",
+    "answers": [
+      {
+        "content": "Marca clase tabla base datos",
+        "correct": true
+      },
+      {
+        "content": "Inyecta dependencias",
+        "correct": false
+      },
+      {
+        "content": "Maneja requests HTTP",
+        "correct": false
+      },
+      {
+        "content": "Valida datos entrada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 112,
+    "title": "¿Qué hace HAVING SQL?",
+    "answers": [
+      {
+        "content": "Filtra grupos agregados",
+        "correct": true
+      },
+      {
+        "content": "Ordena resultados",
+        "correct": false
+      },
+      {
+        "content": "Une tablas",
+        "correct": false
+      },
+      {
+        "content": "Elimina duplicados",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 113,
+    "title": "¿Qué es semantic HTML?",
+    "answers": [
+      {
+        "content": "Etiquetas describen contenido significado",
+        "correct": true
+      },
+      {
+        "content": "Etiquetas visuales div span",
+        "correct": false
+      },
+      {
+        "content": "Estilos inline",
+        "correct": false
+      },
+      {
+        "content": "Scripts embebidos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 114,
+    "title": "¿Qué lanza NotSerializableException?",
+    "answers": [
+      {
+        "content": "Serializar clase sin Serializable",
+        "correct": true
+      },
+      {
+        "content": "Dividir cero",
+        "correct": false
+      },
+      {
+        "content": "NullPointer acceso",
+        "correct": false
+      },
+      {
+        "content": "Array bounds",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 115,
+    "title": "¿Qué es INNER JOIN?",
+    "answers": [
+      {
+        "content": "Solo filas coincidentes ambas tablas",
+        "correct": true
+      },
+      {
+        "content": "Izquierda completa",
+        "correct": false
+      },
+      {
+        "content": "Derecha completa",
+        "correct": false
+      },
+      {
+        "content": "Ambas NULLs",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 116,
+    "title": "¿Qué es try-catch Java?",
+    "answers": [
+      {
+        "content": "Manejo excepciones código",
+        "correct": true
+      },
+      {
+        "content": "Bucle repetir",
+        "correct": false
+      },
+      {
+        "content": "Condicional if",
+        "correct": false
+      },
+      {
+        "content": "Crear hilos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 117,
+    "title": "¿Qué es @RestController?",
+    "answers": [
+      {
+        "content": "@Controller + @ResponseBody JSON",
+        "correct": true
+      },
+      {
+        "content": "Solo vistas HTML",
+        "correct": false
+      },
+      {
+        "content": "Lógica negocio",
+        "correct": false
+      },
+      {
+        "content": "Acceso datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 118,
+    "title": "¿Qué es FOREIGN KEY?",
+    "answers": [
+      {
+        "content": "Referencia PRIMARY KEY otra tabla",
+        "correct": true
+      },
+      {
+        "content": "Clave única tabla",
+        "correct": false
+      },
+      {
+        "content": "Campo nulo",
+        "correct": false
+      },
+      {
+        "content": "Índice compuesto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 119,
+    "title": "¿Qué es position relative CSS?",
+    "answers": [
+      {
+        "content": "Posición normal offset",
+        "correct": true
+      },
+      {
+        "content": "Fuera flujo documento",
+        "correct": false
+      },
+      {
+        "content": "Flotante lado",
+        "correct": false
+      },
+      {
+        "content": "Fijo viewport",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 120,
+    "title": "¿Qué es LinkedList Java?",
+    "answers": [
+      {
+        "content": "Lista doblemente enlazada",
+        "correct": true
+      },
+      {
+        "content": "Array contiguo",
+        "correct": false
+      },
+      {
+        "content": "Árbol balanceado",
+        "correct": false
+      },
+      {
+        "content": "Pila LIFO",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 121,
+    "title": "¿Qué es JpaRepository Spring?",
+    "answers": [
+      {
+        "content": "Interfaz CRUD operaciones JPA",
+        "correct": true
+      },
+      {
+        "content": "Configuración base datos",
+        "correct": false
+      },
+      {
+        "content": "Mapeo entidades",
+        "correct": false
+      },
+      {
+        "content": "Transacciones manuales",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 122,
+    "title": "¿Qué es ORDER BY SQL?",
+    "answers": [
+      {
+        "content": "Ordena resultados ASC DESC",
+        "correct": true
+      },
+      {
+        "content": "Agrupa filas",
+        "correct": false
+      },
+      {
+        "content": "Cuenta registros",
+        "correct": false
+      },
+      {
+        "content": "Límite filas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 123,
+    "title": "¿Qué etiqueta head HTML?",
+    "answers": [
+      {
+        "content": "Metadatos documento estilos scripts",
+        "correct": true
+      },
+      {
+        "content": "Contenido principal",
+        "correct": false
+      },
+      {
+        "content": "Navegación sitio",
+        "correct": false
+      },
+      {
+        "content": "Pie página",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 124,
+    "title": "¿Qué serializa ObjectOutputStream?",
+    "answers": [
+      {
+        "content": "Objetos implementan Serializable bytes",
+        "correct": true
+      },
+      {
+        "content": "Solo primitivos",
+        "correct": false
+      },
+      {
+        "content": "Strings únicamente",
+        "correct": false
+      },
+      {
+        "content": "Arrays enteros",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 125,
+    "title": "¿Diferencia FULL OUTER LEFT JOIN?",
+    "answers": [
+      {
+        "content": "FULL ambas tablas NULLs faltantes",
+        "correct": true
+      },
+      {
+        "content": "Igual solo izquierda",
+        "correct": false
+      },
+      {
+        "content": "FULL sin NULLs",
+        "correct": false
+      },
+      {
+        "content": "LEFT incluye derecha completa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 126,
+    "title": "¿Qué es interface Java?",
+    "answers": [
+      {
+        "content": "Contrato métodos sin implementación",
+        "correct": true
+      },
+      {
+        "content": "Clase abstracta parcial",
+        "correct": false
+      },
+      {
+        "content": "Herencia múltiple",
+        "correct": false
+      },
+      {
+        "content": "Enumeración valores",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 127,
+    "title": "¿Qué es application.properties Spring?",
+    "answers": [
+      {
+        "content": "Configuración app puerto DB etc",
+        "correct": true
+      },
+      {
+        "content": "Definir rutas endpoints",
+        "correct": false
+      },
+      {
+        "content": "Mapeo entidades JPA",
+        "correct": false
+      },
+      {
+        "content": "Tests unitarios",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 128,
+    "title": "¿Qué es UNIQUE constraint BD?",
+    "answers": [
+      {
+        "content": "Valores columna sin duplicados",
+        "correct": true
+      },
+      {
+        "content": "Permite NULLs múltiples",
+        "correct": false
+      },
+      {
+        "content": "Referencia externa",
+        "correct": false
+      },
+      {
+        "content": "Valor por defecto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 129,
+    "title": "¿Qué es grid CSS?",
+    "answers": [
+      {
+        "content": "Layout bidimensional filas columnas",
+        "correct": true
+      },
+      {
+        "content": "Unidimensional flex",
+        "correct": false
+      },
+      {
+        "content": "Posicionamiento flotante",
+        "correct": false
+      },
+      {
+        "content": "Bloques inline",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 130,
+    "title": "¿Qué es Set Java?",
+    "answers": [
+      {
+        "content": "Colección sin elementos duplicados",
+        "correct": true
+      },
+      {
+        "content": "Lista ordenada índices",
+        "correct": false
+      },
+      {
+        "content": "Mapa asociativo",
+        "correct": false
+      },
+      {
+        "content": "Cola prioritaria",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 131,
+    "title": "¿Qué es @Transactional?",
+    "answers": [
+      {
+        "content": "Gestiona transacciones ACID automáticas",
+        "correct": true
+      },
+      {
+        "content": "Inyecta beans",
+        "correct": false
+      },
+      {
+        "content": "Serializa respuestas",
+        "correct": false
+      },
+      {
+        "content": "Caché resultados",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 132,
+    "title": "¿Qué hace LIMIT SQL?",
+    "answers": [
+      {
+        "content": "Restringe número filas resultado",
+        "correct": true
+      },
+      {
+        "content": "Une tablas",
+        "correct": false
+      },
+      {
+        "content": "Agrupa datos",
+        "correct": false
+      },
+      {
+        "content": "Calcula suma",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 133,
+    "title": "¿Qué es section HTML5?",
+    "answers": [
+      {
+        "content": "Sección temática contenido",
+        "correct": true
+      },
+      {
+        "content": "Barra navegación",
+        "correct": false
+      },
+      {
+        "content": "Formulario inputs",
+        "correct": false
+      },
+      {
+        "content": "Imagen figura",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 134,
+    "title": "¿Qué readObject serialización?",
+    "answers": [
+      {
+        "content": "Método personalizado deserialización",
+        "correct": true
+      },
+      {
+        "content": "Método serialización",
+        "correct": false
+      },
+      {
+        "content": "Validación objeto",
+        "correct": false
+      },
+      {
+        "content": "Clonación profunda",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 135,
+    "title": "¿Qué es CROSS JOIN?",
+    "answers": [
+      {
+        "content": "Producto cartesiano todas combinaciones",
+        "correct": true
+      },
+      {
+        "content": "Solo coincidencias",
+        "correct": false
+      },
+      {
+        "content": "Izquierda preservada",
+        "correct": false
+      },
+      {
+        "content": "Condición ON obligatoria",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 136,
+    "title": "¿Qué es lambda Java 8?",
+    "answers": [
+      {
+        "content": "Expresión función anónima",
+        "correct": true
+      },
+      {
+        "content": "Bucle tradicional",
+        "correct": false
+      },
+      {
+        "content": "Clase anónima",
+        "correct": false
+      },
+      {
+        "content": "Método estático",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 137,
+    "title": "¿Qué es RestTemplate Spring?",
+    "answers": [
+      {
+        "content": "Cliente HTTP llamadas externas",
+        "correct": true
+      },
+      {
+        "content": "Servidor web embebido",
+        "correct": false
+      },
+      {
+        "content": "ORM base datos",
+        "correct": false
+      },
+      {
+        "content": "Seguridad OAuth",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 138,
+    "title": "¿Qué es NOT NULL BD?",
+    "answers": [
+      {
+        "content": "Campo obliga valor no nulo",
+        "correct": true
+      },
+      {
+        "content": "Valor automático insert",
+        "correct": false
+      },
+      {
+        "content": "Índice único",
+        "correct": false
+      },
+      {
+        "content": "Relación uno-muchos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 139,
+    "title": "¿Qué es z-index CSS?",
+    "answers": [
+      {
+        "content": "Orden apilamiento elementos",
+        "correct": true
+      },
+      {
+        "content": "Transformación 3D",
+        "correct": false
+      },
+      {
+        "content": "Opacidad capa",
+        "correct": false
+      },
+      {
+        "content": "Rotación elemento",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 140,
+    "title": "¿Qué es Queue Java?",
+    "answers": [
+      {
+        "content": "Cola FIFO primero entrar primero salir",
+        "correct": true
+      },
+      {
+        "content": "Pila LIFO",
+        "correct": false
+      },
+      {
+        "content": "Lista aleatoria",
+        "correct": false
+      },
+      {
+        "content": "Árbol búsqueda",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 141,
+    "title": "¿Qué es DTO patrón?",
+    "answers": [
+      {
+        "content": "Objeto transferencia datos capas",
+        "correct": true
+      },
+      {
+        "content": "Entidad persistencia",
+        "correct": false
+      },
+      {
+        "content": "Controlador REST",
+        "correct": false
+      },
+      {
+        "content": "Servicio negocio",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 142,
+    "title": "¿Qué es subquery SQL?",
+    "answers": [
+      {
+        "content": "Consulta anidada dentro otra",
+        "correct": true
+      },
+      {
+        "content": "Unión múltiples tablas",
+        "correct": false
+      },
+      {
+        "content": "Procedimiento almacenado",
+        "correct": false
+      },
+      {
+        "content": "Trigger evento",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 143,
+    "title": "¿Qué es article HTML?",
+    "answers": [
+      {
+        "content": "Contenido independiente reutilizable",
+        "correct": true
+      },
+      {
+        "content": "Encabezado página",
+        "correct": false
+      },
+      {
+        "content": "Barra lateral",
+        "correct": false
+      },
+      {
+        "content": "Pie copyright",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 144,
+    "title": "¿Qué writeObject serialización?",
+    "answers": [
+      {
+        "content": "Personaliza escritura bytes serialización",
+        "correct": true
+      },
+      {
+        "content": "Lectura bytes",
+        "correct": false
+      },
+      {
+        "content": "Validación versión",
+        "correct": false
+      },
+      {
+        "content": "Compresión datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 145,
+    "title": "¿Qué es SELF JOIN?",
+    "answers": [
+      {
+        "content": "Tabla consigo misma jerarquías",
+        "correct": true
+      },
+      {
+        "content": "Dos tablas diferentes",
+        "correct": false
+      },
+      {
+        "content": "Unión externa completa",
+        "correct": false
+      },
+      {
+        "content": "Producto cartesiano",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 146,
+    "title": "¿Qué es Stream API Java?",
+    "answers": [
+      {
+        "content": "Procesamiento funcional colecciones",
+        "correct": true
+      },
+      {
+        "content": "Entrada salida archivos",
+        "correct": false
+      },
+      {
+        "content": "Hilos concurrentes",
+        "correct": false
+      },
+      {
+        "content": "Red sockets",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 147,
+    "title": "¿Qué es @Query Spring JPA?",
+    "answers": [
+      {
+        "content": "Consulta personalizada JPQL SQL",
+        "correct": true
+      },
+      {
+        "content": "Inyección dependencias",
+        "correct": false
+      },
+      {
+        "content": "Mapeo JSON",
+        "correct": false
+      },
+      {
+        "content": "Validación bean",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 148,
+    "title": "¿Qué es CASCADE DELETE?",
+    "answers": [
+      {
+        "content": "Elimina hijos al borrar padre",
+        "correct": true
+      },
+      {
+        "content": "Actualiza automáticamente",
+        "correct": false
+      },
+      {
+        "content": "Crea índices",
+        "correct": false
+      },
+      {
+        "content": "Valida integridad",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 149,
+    "title": "¿Qué es box-shadow CSS?",
+    "answers": [
+      {
+        "content": "Sombra alrededor elemento",
+        "correct": true
+      },
+      {
+        "content": "Borde redondeado",
+        "correct": false
+      },
+      {
+        "content": "Gradiente fondo",
+        "correct": false
+      },
+      {
+        "content": "Texto sombra",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 150,
+    "title": "¿Qué es PriorityQueue Java?",
+    "answers": [
+      {
+        "content": "Cola ordenada prioridad",
+        "correct": true
+      },
+      {
+        "content": "Cola simple FIFO",
+        "correct": false
+      },
+      {
+        "content": "Pila LIFO",
+        "correct": false
+      },
+      {
+        "content": "Hash sin orden",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 151,
+    "title": "¿Qué es @Component Spring?",
+    "answers": [
+      {
+        "content": "Anotación genérica componente gestionado",
+        "correct": true
+      },
+      {
+        "content": "Solo controladores web",
+        "correct": false
+      },
+      {
+        "content": "Repositorios datos",
+        "correct": false
+      },
+      {
+        "content": "Servicios negocio específicos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 152,
+    "title": "¿Qué diferencia EXISTS IN SQL?",
+    "answers": [
+      {
+        "content": "EXISTS verifica existencia IN lista valores",
+        "correct": true
+      },
+      {
+        "content": "Iguales rendimiento",
+        "correct": false
+      },
+      {
+        "content": "IN más rápido siempre",
+        "correct": false
+      },
+      {
+        "content": "EXISTS solo subqueries",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 153,
+    "title": "¿Qué es canvas HTML5?",
+    "answers": [
+      {
+        "content": "Elemento gráficos 2D contexto dibujo",
+        "correct": true
+      },
+      {
+        "content": "Formulario inputs",
+        "correct": false
+      },
+      {
+        "content": "Video audio",
+        "correct": false
+      },
+      {
+        "content": "Mapa interactivo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 154,
+    "title": "¿Qué es Optional Java 8?",
+    "answers": [
+      {
+        "content": "Contenedor valor nulo seguro",
+        "correct": true
+      },
+      {
+        "content": "Lista opcional elementos",
+        "correct": false
+      },
+      {
+        "content": "Mapa condicional",
+        "correct": false
+      },
+      {
+        "content": "Excepción manejo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 155,
+    "title": "¿Qué hace @Repository Spring?",
+    "answers": [
+      {
+        "content": "@Component + traducción excepciones DAO",
+        "correct": true
+      },
+      {
+        "content": "Lógica negocio",
+        "correct": false
+      },
+      {
+        "content": "Controlador HTTP",
+        "correct": false
+      },
+      {
+        "content": "Configuración app",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 156,
+    "title": "¿Qué es VIEW base datos?",
+    "answers": [
+      {
+        "content": "Consulta virtual tabla resultados",
+        "correct": true
+      },
+      {
+        "content": "Tabla física almacenamiento",
+        "correct": false
+      },
+      {
+        "content": "Procedimiento parámetros",
+        "correct": false
+      },
+      {
+        "content": "Índice aceleración",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 157,
+    "title": "¿Qué es ::before CSS?",
+    "answers": [
+      {
+        "content": "Pseudo-elemento contenido generado antes",
+        "correct": true
+      },
+      {
+        "content": "Después elemento",
+        "correct": false
+      },
+      {
+        "content": "Hover mouse",
+        "correct": false
+      },
+      {
+        "content": "Estado activo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 158,
+    "title": "¿Qué es ConcurrentHashMap?",
+    "answers": [
+      {
+        "content": "Mapa thread-safe segmentado",
+        "correct": true
+      },
+      {
+        "content": "HashMap sincronizado completo",
+        "correct": false
+      },
+      {
+        "content": "Mapa inmutable",
+        "correct": false
+      },
+      {
+        "content": "Ordenado inserción",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 159,
+    "title": "¿Qué es @Service Spring?",
+    "answers": [
+      {
+        "content": "Componente capa negocio lógica",
+        "correct": true
+      },
+      {
+        "content": "Acceso persistencia",
+        "correct": false
+      },
+      {
+        "content": "Manejo requests",
+        "correct": false
+      },
+      {
+        "content": "Validación datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 160,
+    "title": "¿Qué es TRIGGER SQL?",
+    "answers": [
+      {
+        "content": "Código ejecuta eventos INSERT UPDATE",
+        "correct": true
+      },
+      {
+        "content": "Vista virtual",
+        "correct": false
+      },
+      {
+        "content": "Función reutilizable",
+        "correct": false
+      },
+      {
+        "content": "Procedimiento almacenado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 161,
+    "title": "¿Qué es localStorage HTML?",
+    "answers": [
+      {
+        "content": "Almacenamiento persistente clave-valor",
+        "correct": true
+      },
+      {
+        "content": "Sesión temporal",
+        "correct": false
+      },
+      {
+        "content": "Cookies servidor",
+        "correct": false
+      },
+      {
+        "content": "IndexedDB compleja",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 162,
+    "title": "¿Qué método flatMap Stream?",
+    "answers": [
+      {
+        "content": "Aplana streams anidados uno",
+        "correct": true
+      },
+      {
+        "content": "Mapea elementos planos",
+        "correct": false
+      },
+      {
+        "content": "Filtra pares",
+        "correct": false
+      },
+      {
+        "content": "Reduce suma",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 163,
+    "title": "¿Qué es Bean Spring?",
+    "answers": [
+      {
+        "content": "Objeto gestionado contenedor IoC",
+        "correct": true
+      },
+      {
+        "content": "Clase POJO simple",
+        "correct": false
+      },
+      {
+        "content": "Interfaz contrato",
+        "correct": false
+      },
+      {
+        "content": "Enum valores",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 164,
+    "title": "¿Qué diferencia clustered non-clustered index?",
+    "answers": [
+      {
+        "content": "Clustered ordena datos físicos non-clustered punteros",
+        "correct": true
+      },
+      {
+        "content": "Iguales rendimiento",
+        "correct": false
+      },
+      {
+        "content": "Clustered múltiples tabla",
+        "correct": false
+      },
+      {
+        "content": "Non-clustered más lento",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 165,
+    "title": "¿Qué es animation CSS?",
+    "answers": [
+      {
+        "content": "Propiedad keyframes transiciones complejas",
+        "correct": true
+      },
+      {
+        "content": "Cambio suave propiedades",
+        "correct": false
+      },
+      {
+        "content": "Transform 2D 3D",
+        "correct": false
+      },
+      {
+        "content": "Gradiente animado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 166,
+    "title": "¿Qué es AtomicInteger Java?",
+    "answers": [
+      {
+        "content": "Entero thread-safe operaciones atómicas",
+        "correct": true
+      },
+      {
+        "content": "Integer inmutable",
+        "correct": false
+      },
+      {
+        "content": "Contador simple",
+        "correct": false
+      },
+      {
+        "content": "Wrapper primitivo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 167,
+    "title": "¿Qué es @Configuration Spring?",
+    "answers": [
+      {
+        "content": "Clase define beans configuración Java",
+        "correct": true
+      },
+      {
+        "content": "Componente servicio",
+        "correct": false
+      },
+      {
+        "content": "Controlador API",
+        "correct": false
+      },
+      {
+        "content": "Repositorio datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 168,
+    "title": "¿Qué es stored procedure SQL?",
+    "answers": [
+      {
+        "content": "Código SQL compilado reutilizable parámetros",
+        "correct": true
+      },
+      {
+        "content": "Vista dinámica",
+        "correct": false
+      },
+      {
+        "content": "Función escalar",
+        "correct": false
+      },
+      {
+        "content": "Tabla temporal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 169,
+    "title": "¿Qué es fetch API JavaScript?",
+    "answers": [
+      {
+        "content": "Interfaz promesas requests HTTP modernas",
+        "correct": true
+      },
+      {
+        "content": "XMLHttpRequest antigua",
+        "correct": false
+      },
+      {
+        "content": "WebSocket tiempo real",
+        "correct": false
+      },
+      {
+        "content": "JSON parseador",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 170,
+    "title": "¿Qué es method reference Java?",
+    "answers": [
+      {
+        "content": ":: sintaxis lambda shorthand métodos existentes",
+        "correct": true
+      },
+      {
+        "content": "Nueva implementación método",
+        "correct": false
+      },
+      {
+        "content": "Función anónima completa",
+        "correct": false
+      },
+      {
+        "content": "Clase interna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 171,
+    "title": "¿Qué es Pageable Spring Data?",
+    "answers": [
+      {
+        "content": "Objeto paginación ordenación filtros",
+        "correct": true
+      },
+      {
+        "content": "Configuración conexión DB",
+        "correct": false
+      },
+      {
+        "content": "Mapeo resultados",
+        "correct": false
+      },
+      {
+        "content": "Cache consultas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 172,
+    "title": "¿Qué es pivot tabla SQL?",
+    "answers": [
+      {
+        "content": "Convierte filas columnas dinámicas",
+        "correct": true
+      },
+      {
+        "content": "Agrupa datos",
+        "correct": false
+      },
+      {
+        "content": "Une tablas",
+        "correct": false
+      },
+      {
+        "content": "Filtra condiciones",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 173,
+    "title": "¿Qué es details summary HTML?",
+    "answers": [
+      {
+        "content": "Elemento acordeón expandable información",
+        "correct": true
+      },
+      {
+        "content": "Tabla datos",
+        "correct": false
+      },
+      {
+        "content": "Formulario validación",
+        "correct": false
+      },
+      {
+        "content": "Progreso barra",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 174,
+    "title": "¿Qué hace Collectors.toList()?",
+    "answers": [
+      {
+        "content": "Recolecta stream lista",
+        "correct": true
+      },
+      {
+        "content": "Suma elementos",
+        "correct": false
+      },
+      {
+        "content": "Mapea pares",
+        "correct": false
+      },
+      {
+        "content": "Agrupa mapa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 175,
+    "title": "¿Qué es AOP Spring?",
+    "answers": [
+      {
+        "content": "Programación aspectos transversales logging security",
+        "correct": true
+      },
+      {
+        "content": "Orientada objetos",
+        "correct": false
+      },
+      {
+        "content": "Funcional reactiva",
+        "correct": false
+      },
+      {
+        "content": "Procedural imperativa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 176,
+    "title": "¿Qué optimiza query SQL?",
+    "answers": [
+      {
+        "content": "EXPLAIN PLAN índices joins apropiados",
+        "correct": true
+      },
+      {
+        "content": "Más subqueries",
+        "correct": false
+      },
+      {
+        "content": "SELECT * siempre",
+        "correct": false
+      },
+      {
+        "content": "Sin WHERE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 177,
+    "title": "¿Qué es clamp() CSS?",
+    "answers": [
+      {
+        "content": "Función valor entre mínimo máximo",
+        "correct": true
+      },
+      {
+        "content": "Gradiente lineal",
+        "correct": false
+      },
+      {
+        "content": "Transform scale",
+        "correct": false
+      },
+      {
+        "content": "Filtro blur",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 178,
+    "title": "¿Qué es CompletableFuture?",
+    "answers": [
+      {
+        "content": "Future asíncrono composición chains",
+        "correct": true
+      },
+      {
+        "content": "Thread pool fijo",
+        "correct": false
+      },
+      {
+        "content": "Sincronización mutex",
+        "correct": false
+      },
+      {
+        "content": "Executor servicio",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 179,
+    "title": "¿Qué es @Bean método?",
+    "answers": [
+      {
+        "content": "Registra objeto factory método configuración",
+        "correct": true
+      },
+      {
+        "content": "Inyecta dependencias",
+        "correct": false
+      },
+      {
+        "content": "Maneja excepciones",
+        "correct": false
+      },
+      {
+        "content": "Serializa JSON",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 180,
+    "title": "¿Qué es recursive CTE SQL?",
+    "answers": [
+      {
+        "content": "Common Table Expression jerarquías recursivas",
+        "correct": true
+      },
+      {
+        "content": "Vista materializada",
+        "correct": false
+      },
+      {
+        "content": "Función tabla",
+        "correct": false
+      },
+      {
+        "content": "Partición datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 181,
+    "title": "¿Qué es picture HTML?",
+    "answers": [
+      {
+        "content": "Elemento responsive images fuentes múltiples",
+        "correct": true
+      },
+      {
+        "content": "Fondo imagen",
+        "correct": false
+      },
+      {
+        "content": "Icono SVG",
+        "correct": false
+      },
+      {
+        "content": "Mapa áreas clicables",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 182,
+    "title": "¿Qué es peek() Stream?",
+    "answers": [
+      {
+        "content": "Operación intermedia debug efectos secundarios",
+        "correct": true
+      },
+      {
+        "content": "Filtra elementos",
+        "correct": false
+      },
+      {
+        "content": "Transforma datos",
+        "correct": false
+      },
+      {
+        "content": "Terminal recolecta",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 183,
+    "title": "¿Qué es Spring Security?",
+    "answers": [
+      {
+        "content": "Framework autenticación autorización OAuth JWT",
+        "correct": true
+      },
+      {
+        "content": "Validación beans",
+        "correct": false
+      },
+      {
+        "content": "Cache distribuido",
+        "correct": false
+      },
+      {
+        "content": "Mensajería queues",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 184,
+    "title": "¿Qué es normalization BD?",
+    "answers": [
+      {
+        "content": "Proceso reduce redundancia anomalías",
+        "correct": true
+      },
+      {
+        "content": "Denormalizar velocidad",
+        "correct": false
+      },
+      {
+        "content": "Índices múltiples",
+        "correct": false
+      },
+      {
+        "content": "Sharding horizontal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 185,
+    "title": "¿Qué es container queries CSS?",
+    "answers": [
+      {
+        "content": "@container estilos basados contenedor tamaño",
+        "correct": true
+      },
+      {
+        "content": "Media queries viewport",
+        "correct": false
+      },
+      {
+        "content": "Flex responsive",
+        "correct": false
+      },
+      {
+        "content": "Grid auto-fit",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 186,
+    "title": "¿Qué es ForkJoinPool?",
+    "answers": [
+      {
+        "content": "Executor divide-conquista tareas paralelas",
+        "correct": true
+      },
+      {
+        "content": "Thread pool fijo",
+        "correct": false
+      },
+      {
+        "content": "Scheduled executor",
+        "correct": false
+      },
+      {
+        "content": "Single thread",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 187,
+    "title": "¿Qué es @Profile Spring?",
+    "answers": [
+      {
+        "content": "Activa beans perfiles dev prod test",
+        "correct": true
+      },
+      {
+        "content": "Prioridad beans",
+        "correct": false
+      },
+      {
+        "content": "Lazy loading",
+        "correct": false
+      },
+      {
+        "content": "Scope singleton",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 188,
+    "title": "¿Qué es window function SQL?",
+    "answers": [
+      {
+        "content": "ROW_NUMBER RANK funciones OVER PARTITION",
+        "correct": true
+      },
+      {
+        "content": "Agregadas GROUP BY",
+        "correct": false
+      },
+      {
+        "content": "Escalares parámetros",
+        "correct": false
+      },
+      {
+        "content": "Tabulares múltiples filas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 189,
+    "title": "¿Qué es dialog HTML?",
+    "answers": [
+      {
+        "content": "Modal nativo showModal backdrop",
+        "correct": true
+      },
+      {
+        "content": "Formulario popup",
+        "correct": false
+      },
+      {
+        "content": "Tooltip hint",
+        "correct": false
+      },
+      {
+        "content": "Toast notificación",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 190,
+    "title": "¿Qué es reduce() Stream?",
+    "answers": [
+      {
+        "content": "Combina elementos valor único acumulador",
+        "correct": true
+      },
+      {
+        "content": "Paralelo divide",
+        "correct": false
+      },
+      {
+        "content": "Ordena elementos",
+        "correct": false
+      },
+      {
+        "content": "Duplica stream",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 191,
+    "title": "¿Qué es actuator Spring Boot?",
+    "answers": [
+      {
+        "content": "Endpoints monitoreo health metrics info",
+        "correct": true
+      },
+      {
+        "content": "Logging configurado",
+        "correct": false
+      },
+      {
+        "content": "Testing mocks",
+        "correct": false
+      },
+      {
+        "content": "Deployment docker",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 192,
+    "title": "¿Qué es deadlock BD?",
+    "answers": [
+      {
+        "content": "Transacciones esperan mutuamente bloqueadas",
+        "correct": true
+      },
+      {
+        "content": "Índice corrupto",
+        "correct": false
+      },
+      {
+        "content": "Query lenta timeout",
+        "correct": false
+      },
+      {
+        "content": "Conexión pool agotada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 193,
+    "title": "¿Qué es aspect-ratio CSS?",
+    "answers": [
+      {
+        "content": "Propiedad mantiene proporciones elementos",
+        "correct": true
+      },
+      {
+        "content": "Bordes redondeados",
+        "correct": false
+      },
+      {
+        "content": "Sombras múltiples",
+        "correct": false
+      },
+      {
+        "content": "Transiciones suaves",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 194,
+    "title": "¿Qué es Phaser Phaser Java?",
+    "answers": [
+      {
+        "content": "Coordinación threads fases tareas",
+        "correct": true
+      },
+      {
+        "content": "Lock reentrante",
+        "correct": false
+      },
+      {
+        "content": "Semaphore contador",
+        "correct": false
+      },
+      {
+        "content": "Barrier punto encuentro",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 195,
+    "title": "¿Qué es @Cacheable?",
+    "answers": [
+      {
+        "content": "Caché resultados métodos key-value",
+        "correct": true
+      },
+      {
+        "content": "Evict elimina cache",
+        "correct": false
+      },
+      {
+        "content": "Put agrega manual",
+        "correct": false
+      },
+      {
+        "content": "Config cache manager",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 196,
+    "title": "¿Qué es lateral join SQL?",
+    "answers": [
+      {
+        "content": "LATERAL subquery correlacionada funciones tabla",
+        "correct": true
+      },
+      {
+        "content": "Cross producto",
+        "correct": false
+      },
+      {
+        "content": "Inner estándar",
+        "correct": false
+      },
+      {
+        "content": "Outer izquierda",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 197,
+    "title": "¿Qué es output HTML?",
+    "answers": [
+      {
+        "content": "Elemento valor calculado formulario",
+        "correct": true
+      },
+      {
+        "content": "Entrada texto",
+        "correct": false
+      },
+      {
+        "content": "Botón submit",
+        "correct": false
+      },
+      {
+        "content": "Select opciones",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 198,
+    "title": "¿Qué es distinct() Stream?",
+    "answers": [
+      {
+        "content": "Elimina duplicados elementos",
+        "correct": true
+      },
+      {
+        "content": "Ordena natural",
+        "correct": false
+      },
+      {
+        "content": "Limita tamaño",
+        "correct": false
+      },
+      {
+        "content": "Salta primeros",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 199,
+    "title": "¿Qué es Micrometer Spring?",
+    "answers": [
+      {
+        "content": "Fachada métricas Prometheus Grafana",
+        "correct": true
+      },
+      {
+        "content": "Logging SLF4J",
+        "correct": false
+      },
+      {
+        "content": "Tracing Jaeger",
+        "correct": false
+      },
+      {
+        "content": "Auditing eventos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 200,
+    "title": "¿Qué es sharding base datos?",
+    "answers": [
+      {
+        "content": "Particiona datos múltiples servidores horizontal",
+        "correct": true
+      },
+      {
+        "content": "Replicación lectura",
+        "correct": false
+      },
+      {
+        "content": "Backup snapshots",
+        "correct": false
+      },
+      {
+        "content": "Clustering alta disponibilidad",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 201,
+    "title": "¿Qué es subgrid CSS?",
+    "answers": [
+      {
+        "content": "Grid hijo alinea padre tracks",
+        "correct": true
+      },
+      {
+        "content": "Subcontainer flex",
+        "correct": false
+      },
+      {
+        "content": "Nested grid independiente",
+        "correct": false
+      },
+      {
+        "content": "Absolute posicionado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 202,
+    "title": "¿Qué es VarHandle Java?",
+    "answers": [
+      {
+        "content": "Acceso variables atómicas memoria órdenes",
+        "correct": true
+      },
+      {
+        "content": "Unsafe low-level",
+        "correct": false
+      },
+      {
+        "content": "Reflection fields",
+        "correct": false
+      },
+      {
+        "content": "Serialization handle",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 203,
+    "title": "¿Qué es @EventListener?",
+    "answers": [
+      {
+        "content": "Maneja eventos application custom",
+        "correct": true
+      },
+      {
+        "content": "Async ejecución",
+        "correct": false
+      },
+      {
+        "content": "Scheduled tasks",
+        "correct": false
+      },
+      {
+        "content": "Validation groups",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 204,
+    "title": "¿Qué es analytic function SQL?",
+    "answers": [
+      {
+        "content": "LAG LEAD FIRST_VALUE ventana",
+        "correct": true
+      },
+      {
+        "content": "Aggregate COUNT SUM",
+        "correct": false
+      },
+      {
+        "content": "String CONCAT SUBSTR",
+        "correct": false
+      },
+      {
+        "content": "Date DATEADD",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 205,
+    "title": "¿Qué es meter HTML?",
+    "answers": [
+      {
+        "content": "Barra progreso valor rango",
+        "correct": true
+      },
+      {
+        "content": "Escala slider",
+        "correct": false
+      },
+      {
+        "content": "Color picker",
+        "correct": false
+      },
+      {
+        "content": "Date selector",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 206,
+    "title": "¿Qué es anyMatch Stream?",
+    "answers": [
+      {
+        "content": "Verdadero si elemento cumple predicado",
+        "correct": true
+      },
+      {
+        "content": "Cuenta elementos",
+        "correct": false
+      },
+      {
+        "content": "Todos cumplen",
+        "correct": false
+      },
+      {
+        "content": "Ninguno cumple",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 207,
+    "title": "¿Qué es Spring Cloud?",
+    "answers": [
+      {
+        "content": "Microservicios config server gateway circuit breaker",
+        "correct": true
+      },
+      {
+        "content": "Batch processing",
+        "correct": false
+      },
+      {
+        "content": "Web reactive",
+        "correct": false
+      },
+      {
+        "content": "Data reactive",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 208,
+    "title": "¿Qué es read replica BD?",
+    "answers": [
+      {
+        "content": "Copia master lecturas escalabilidad",
+        "correct": true
+      },
+      {
+        "content": "Backup nightly",
+        "correct": false
+      },
+      {
+        "content": "Sharding partition",
+        "correct": false
+      },
+      {
+        "content": "Hot standby failover",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 209,
+    "title": "¿Qué es :has() CSS?",
+    "answers": [
+      {
+        "content": "Selector padre basado hijos",
+        "correct": true
+      },
+      {
+        "content": "Hermano siguiente",
+        "correct": false
+      },
+      {
+        "content": "Hijo directo",
+        "correct": false
+      },
+      {
+        "content": "Estado checked",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 210,
+    "title": "¿Qué es StructuredTaskScope?",
+    "answers": [
+      {
+        "content": "Scope tareas estructuradas virtual threads",
+        "correct": true
+      },
+      {
+        "content": "ForkJoin tasks",
+        "correct": false
+      },
+      {
+        "content": "CompletableFuture compose",
+        "correct": false
+      },
+      {
+        "content": "ExecutorService pool",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 211,
+    "title": "¿Qué es @Scheduled?",
+    "answers": [
+      {
+        "content": "Ejecuta métodos cron fixedRate interval",
+        "correct": true
+      },
+      {
+        "content": "Async background",
+        "correct": false
+      },
+      {
+        "content": "Lazy init",
+        "correct": false
+      },
+      {
+        "content": "Conditional profile",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 212,
+    "title": "¿Qué es JSON_TABLE SQL?",
+    "answers": [
+      {
+        "content": "Convierte JSON filas tabla virtual",
+        "correct": true
+      },
+      {
+        "content": "Parse string JSON",
+        "correct": false
+      },
+      {
+        "content": "Validate schema",
+        "correct": false
+      },
+      {
+        "content": "Generate JSON output",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 213,
+    "title": "¿Qué es progress HTML?",
+    "answers": [
+      {
+        "content": "Indicador progreso operación value max",
+        "correct": true
+      },
+      {
+        "content": "Carga spinner",
+        "correct": false
+      },
+      {
+        "content": "Gauge circular",
+        "correct": false
+      },
+      {
+        "content": "Stepper pasos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 214,
+    "title": "¿Qué es findFirst Stream?",
+    "answers": [
+      {
+        "content": "Primer elemento opcional stream",
+        "correct": true
+      },
+      {
+        "content": "Último elemento",
+        "correct": false
+      },
+      {
+        "content": "Aleatorio",
+        "correct": false
+      },
+      {
+        "content": "Máximo valor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 215,
+    "title": "¿Qué es Resilience4j?",
+    "answers": [
+      {
+        "content": "Biblioteca circuit breaker retry rate limiter",
+        "correct": true
+      },
+      {
+        "content": "Spring AOP aspects",
+        "correct": false
+      },
+      {
+        "content": "Micrometer metrics",
+        "correct": false
+      },
+      {
+        "content": "Sleuth tracing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 216,
+    "title": "¿Qué es columnstore index?",
+    "answers": [
+      {
+        "content": "Almacena columnar analytics queries",
+        "correct": true
+      },
+      {
+        "content": "Rowstore OLTP",
+        "correct": false
+      },
+      {
+        "content": "Fulltext search",
+        "correct": false
+      },
+      {
+        "content": "Spatial geometry",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 217,
+    "title": "¿Qué es scroll-snap CSS?",
+    "answers": [
+      {
+        "content": "Control snapping scroll containers",
+        "correct": true
+      },
+      {
+        "content": "Infinite scroll",
+        "correct": false
+      },
+      {
+        "content": "Smooth scroll-behavior",
+        "correct": false
+      },
+      {
+        "content": "Overflow hidden",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 218,
+    "title": "¿Qué es VirtualThread Java 21?",
+    "answers": [
+      {
+        "content": "Hilos livianos miles concurrentes eficientes",
+        "correct": true
+      },
+      {
+        "content": "Platform threads OS",
+        "correct": false
+      },
+      {
+        "content": "Carrier threads pool",
+        "correct": false
+      },
+      {
+        "content": "Pinned threads blocking",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 219,
+    "title": "¿Qué es @CrossOrigin?",
+    "answers": [
+      {
+        "content": "CORS origins permitidos controlador",
+        "correct": true
+      },
+      {
+        "content": "Security roles",
+        "correct": false
+      },
+      {
+        "content": "CSRF protection",
+        "correct": false
+      },
+      {
+        "content": "JWT filter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 220,
+    "title": "¿Qué es MATCH AGAINST fulltext?",
+    "answers": [
+      {
+        "content": "Búsqueda texto natural relevance score",
+        "correct": true
+      },
+      {
+        "content": "LIKE %pattern%",
+        "correct": false
+      },
+      {
+        "content": "REGEXP regex",
+        "correct": false
+      },
+      {
+        "content": "Exact equality",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 221,
+    "title": "¿Qué es datalist HTML?",
+    "answers": [
+      {
+        "content": "Sugerencias autocomplete input",
+        "correct": true
+      },
+      {
+        "content": "Lista ordenada ol",
+        "correct": false
+      },
+      {
+        "content": "Menú dropdown select",
+        "correct": false
+      },
+      {
+        "content": "Tabla datos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 222,
+    "title": "¿Qué es generate() Stream?",
+    "answers": [
+      {
+        "content": "Stream infinito supplier elementos",
+        "correct": true
+      },
+      {
+        "content": "De array finito",
+        "correct": false
+      },
+      {
+        "content": "De collection",
+        "correct": false
+      },
+      {
+        "content": "Concat múltiples",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 223,
+    "title": "¿Qué es WebClient Spring?",
+    "answers": [
+      {
+        "content": "Cliente HTTP reactivo non-blocking",
+        "correct": true
+      },
+      {
+        "content": "RestTemplate bloqueante",
+        "correct": false
+      },
+      {
+        "content": "Feign declarative",
+        "correct": false
+      },
+      {
+        "content": "OpenFeign clients",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 224,
+    "title": "¿Qué es materialized view?",
+    "answers": [
+      {
+        "content": "Vista almacenada físicamente refreshed",
+        "correct": true
+      },
+      {
+        "content": "Vista virtual query",
+        "correct": false
+      },
+      {
+        "content": "Temp table session",
+        "correct": false
+      },
+      {
+        "content": "CTAS create table as",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 225,
+    "title": "¿Qué es accent-color CSS?",
+    "answers": [
+      {
+        "content": "Personaliza colores controles formulario",
+        "correct": true
+      },
+      {
+        "content": "Text shadow",
+        "correct": false
+      },
+      {
+        "content": "Caret color input",
+        "correct": false
+      },
+      {
+        "content": "Selection highlight",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 226,
+    "title": "¿Qué es SequencedCollection Java 21?",
+    "answers": [
+      {
+        "content": "Interfaz colección primera última reversa",
+        "correct": true
+      },
+      {
+        "content": "Sorted ordenada",
+        "correct": false
+      },
+      {
+        "content": "Navigable keys",
+        "correct": false
+      },
+      {
+        "content": "Deque ends",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 227,
+    "title": "¿Qué es R2DBC?",
+    "answers": [
+      {
+        "content": "Reactivo Relational Database Connectivity",
+        "correct": true
+      },
+      {
+        "content": "JDBC blocking",
+        "correct": false
+      },
+      {
+        "content": "JPA ORM",
+        "correct": false
+      },
+      {
+        "content": "MyBatis mapper",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 228,
+    "title": "¿Qué es recursive query JSON?",
+    "answers": [
+      {
+        "content": "JSON path recursivo anidado arrays",
+        "correct": true
+      },
+      {
+        "content": "Flat unnest",
+        "correct": false
+      },
+      {
+        "content": "Aggregate array",
+        "correct": false
+      },
+      {
+        "content": "Path extract",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 229,
+    "title": "¿Qué es template HTML?",
+    "answers": [
+      {
+        "content": "Fragmento scriptable contenido shadow DOM",
+        "correct": true
+      },
+      {
+        "content": "Form template",
+        "correct": false
+      },
+      {
+        "content": "SVG defs",
+        "correct": false
+      },
+      {
+        "content": "IFrame embed",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 230,
+    "title": "¿Qué es iterate() Stream?",
+    "answers": [
+      {
+        "content": "Consume stream acción cada elemento preview Java 22",
+        "correct": true
+      },
+      {
+        "content": "ForEach terminal",
+        "correct": false
+      },
+      {
+        "content": "Map transform",
+        "correct": false
+      },
+      {
+        "content": "Filter predicate",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 231,
+    "title": "¿Qué es GraphQL?",
+    "answers": [
+      {
+        "content": "Query language API flexible schema",
+        "correct": true
+      },
+      {
+        "content": "REST endpoints",
+        "correct": false
+      },
+      {
+        "content": "gRPC protobuf",
+        "correct": false
+      },
+      {
+        "content": "SOAP XML",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 232,
+    "title": "¿Qué es time partitioning?",
+    "answers": [
+      {
+        "content": "Particiona tablas fecha rangos queries eficientes",
+        "correct": true
+      },
+      {
+        "content": "Hash key sharding",
+        "correct": false
+      },
+      {
+        "content": "Range partition number",
+        "correct": false
+      },
+      {
+        "content": "List values",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 233,
+    "title": "¿Qué es :nth-child CSS?",
+    "answers": [
+      {
+        "content": "Selecciona hijos patrón posición",
+        "correct": true
+      },
+      {
+        "content": "Primer hijo only",
+        "correct": false
+      },
+      {
+        "content": "Último hijo",
+        "correct": false
+      },
+      {
+        "content": "Par impar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 234,
+    "title": "¿Qué es Pattern Matching Java?",
+    "answers": [
+      {
+        "content": "Switch instanceof patrones concisos",
+        "correct": true
+      },
+      {
+        "content": "Regex matching",
+        "correct": false
+      },
+      {
+        "content": "Matcher groups",
+        "correct": false
+      },
+      {
+        "content": "String contains",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 235,
+    "title": "¿Qué es @EnableJpaRepositories?",
+    "answers": [
+      {
+        "content": "Habilita escaneo repositorios JPA base packages",
+        "correct": true
+      },
+      {
+        "content": "Auto-config JPA",
+        "correct": false
+      },
+      {
+        "content": "Transaction management",
+        "correct": false
+      },
+      {
+        "content": "Entity scan",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 236,
+    "title": "¿Qué es geospatial index?",
+    "answers": [
+      {
+        "content": "Index espacial points polygons distance queries",
+        "correct": true
+      },
+      {
+        "content": "Fulltext words",
+        "correct": false
+      },
+      {
+        "content": "Composite multi-column",
+        "correct": false
+      },
+      {
+        "content": "Functional expression",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 237,
+    "title": "¿Qué es backdrop-filter CSS?",
+    "answers": [
+      {
+        "content": "Filtro blur efecto detrás elemento",
+        "correct": true
+      },
+      {
+        "content": "Drop shadow",
+        "correct": false
+      },
+      {
+        "content": "Hue rotate",
+        "correct": false
+      },
+      {
+        "content": "Contrast adjust",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 238,
+    "title": "¿Qué es Record Java 16?",
+    "answers": [
+      {
+        "content": "Clase inmutable datos concisa equals hashCode",
+        "correct": true
+      },
+      {
+        "content": "Enum variants",
+        "correct": false
+      },
+      {
+        "content": "Sealed class",
+        "correct": false
+      },
+      {
+        "content": "Value class preview",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 239,
+    "title": "¿Qué es @Valid?",
+    "answers": [
+      {
+        "content": "Valida objeto anotado Bean Validation",
+        "correct": true
+      },
+      {
+        "content": "Sanitiza strings",
+        "correct": false
+      },
+      {
+        "content": "Encrypt payload",
+        "correct": false
+      },
+      {
+        "content": "Log parameters",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 240,
+    "title": "¿Qué es ST_DISTANCE SQL?",
+    "answers": [
+      {
+        "content": "Calcula distancia puntos geospatial",
+        "correct": true
+      },
+      {
+        "content": "String similarity",
+        "correct": false
+      },
+      {
+        "content": "Time diff",
+        "correct": false
+      },
+      {
+        "content": "Numeric abs",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 241,
+    "title": "¿Qué es inert attribute HTML?",
+    "answers": [
+      {
+        "content": "Desactiva interacción elementos subtree",
+        "correct": true
+      },
+      {
+        "content": "Hidden display none",
+        "correct": false
+      },
+      {
+        "content": "Aria-disabled",
+        "correct": false
+      },
+      {
+        "content": "Pointer-events none",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 242,
+    "title": "¿Qué es toMap() collector?",
+    "answers": [
+      {
+        "content": "Recolecta stream Map key mapper value",
+        "correct": true
+      },
+      {
+        "content": "To set unique",
+        "correct": false
+      },
+      {
+        "content": "GroupingBy category",
+        "correct": false
+      },
+      {
+        "content": "Joining strings",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 243,
+    "title": "¿Qué es Kafka Spring?",
+    "answers": [
+      {
+        "content": "Integración streams pub-sub topics partitions",
+        "correct": true
+      },
+      {
+        "content": "RabbitMQ queues",
+        "correct": false
+      },
+      {
+        "content": "ActiveMQ JMS",
+        "correct": false
+      },
+      {
+        "content": "Redis pubsub",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 244,
+    "title": "¿Qué es CDC Change Data Capture?",
+    "answers": [
+      {
+        "content": "Captura cambios tablas eventos streams",
+        "correct": true
+      },
+      {
+        "content": "Backup log",
+        "correct": false
+      },
+      {
+        "content": "Replication binlog",
+        "correct": false
+      },
+      {
+        "content": "Audit trail",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 245,
+    "title": "¿Qué es @starting-style CSS?",
+    "answers": [
+      {
+        "content": "Estilos iniciales animaciones entrada",
+        "correct": true
+      },
+      {
+        "content": "View transitions",
+        "correct": false
+      },
+      {
+        "content": "Scroll-driven animations",
+        "correct": false
+      },
+      {
+        "content": "Container animation",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 246,
+    "title": "¿Qué es Foreign Function Interface Java?",
+    "answers": [
+      {
+        "content": "FFI llamar código nativo C Rust",
+        "correct": true
+      },
+      {
+        "content": "JNI tradicional",
+        "correct": false
+      },
+      {
+        "content": "Panama vector API",
+        "correct": false
+      },
+      {
+        "content": "GraalVM native",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 247,
+    "title": "¿Qué es @Retryable?",
+    "answers": [
+      {
+        "content": "Reintenta método fallido maxAttempts backoff",
+        "correct": true
+      },
+      {
+        "content": "Circuit breaker",
+        "correct": false
+      },
+      {
+        "content": "Bulkhead semaphore",
+        "correct": false
+      },
+      {
+        "content": "Rate limiter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 248,
+    "title": "¿Qué es MATCH_RECOGNIZE SQL?",
+    "answers": [
+      {
+        "content": "Patrones secuencias eventos streaming",
+        "correct": true
+      },
+      {
+        "content": "Regex strings",
+        "correct": false
+      },
+      {
+        "content": "Fulltext boolean",
+        "correct": false
+      },
+      {
+        "content": "Fuzzy search",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 249,
+    "title": "¿Qué es popover HTML?",
+    "answers": [
+      {
+        "content": "Tooltip overlay targetreference",
+        "correct": true
+      },
+      {
+        "content": "Dialog modal",
+        "correct": false
+      },
+      {
+        "content": "Menu dropdown",
+        "correct": false
+      },
+      {
+        "content": "Context menu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 250,
+    "title": "¿Qué es groupBy() preview Stream?",
+    "answers": [
+      {
+        "content": "Agrupa stream Map classifier downstream",
+        "correct": true
+      },
+      {
+        "content": "Collectors.groupingBy",
+        "correct": false
+      },
+      {
+        "content": "PartitioningBy boolean",
+        "correct": false
+      },
+      {
+        "content": "To multimap",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 251,
+    "title": "¿Qué es gRPC?",
+    "answers": [
+      {
+        "content": "RPC high-performance protobuf HTTP2",
+        "correct": true
+      },
+      {
+        "content": "GraphQL queries",
+        "correct": false
+      },
+      {
+        "content": "REST JSON",
+        "correct": false
+      },
+      {
+        "content": "WebSockets bidirectional",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 252,
+    "title": "¿Qué es vector index BD?",
+    "answers": [
+      {
+        "content": "Index embeddings similitud aproximada ANN",
+        "correct": true
+      },
+      {
+        "content": "B-tree ordenado",
+        "correct": false
+      },
+      {
+        "content": "Hash exact",
+        "correct": false
+      },
+      {
+        "content": "Bitmap sparse",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 253,
+    "title": "¿Qué es @property CSS?",
+    "answers": [
+      {
+        "content": "Custom properties variables --color-red",
+        "correct": true
+      },
+      {
+        "content": "Logical properties inline-size",
+        "correct": false
+      },
+      {
+        "content": "Cascade layers",
+        "correct": false
+      },
+      {
+        "content": "Color mix",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 254,
+    "title": "¿Qué es Text Blocks Java 15?",
+    "answers": [
+      {
+        "content": " multiline strings sin escape ",
+        "correct": true
+      },
+      {
+        "content": "Raw strings preview",
+        "correct": false
+      },
+      {
+        "content": "String templates",
+        "correct": false
+      },
+      {
+        "content": "Const strings",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 255,
+    "title": "¿Qué es @ControllerAdvice?",
+    "answers": [
+      {
+        "content": "Global exception handler validation advice",
+        "correct": true
+      },
+      {
+        "content": "Interceptor requests",
+        "correct": false
+      },
+      {
+        "content": "Filter chain",
+        "correct": false
+      },
+      {
+        "content": "Locale resolver",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 256,
+    "title": "¿Qué es temporal table?",
+    "answers": [
+      {
+        "content": "Tabla historia cambios period valid_time",
+        "correct": true
+      },
+      {
+        "content": "Flashback query",
+        "correct": false
+      },
+      {
+        "content": "Pit stop as of",
+        "correct": false
+      },
+      {
+        "content": "Log mining",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 257,
+    "title": "¿Qué es view-transition-name?",
+    "answers": [
+      {
+        "content": "Animación suave cambios DOM elementos nombrados",
+        "correct": true
+      },
+      {
+        "content": "CSS transitions",
+        "correct": false
+      },
+      {
+        "content": "Keyframes WAAPI",
+        "correct": false
+      },
+      {
+        "content": "Intersection observer",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 258,
+    "title": "¿Qué es Panama Foreign Linker?",
+    "answers": [
+      {
+        "content": "Llama funciones nativas sin JNI upcalls downcalls",
+        "correct": true
+      },
+      {
+        "content": "Vector compute SIMD",
+        "correct": false
+      },
+      {
+        "content": "Memory segments layout",
+        "correct": false
+      },
+      {
+        "content": "Symbol lookup",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 259,
+    "title": "¿Qué es @Bulkhead?",
+    "answers": [
+      {
+        "content": "Limita concurrencia threads/semáforos Resilience4j",
+        "correct": true
+      },
+      {
+        "content": "Rate limit tokens",
+        "correct": false
+      },
+      {
+        "content": "Retry exponential",
+        "correct": false
+      },
+      {
+        "content": "Time limiter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 260,
+    "title": "¿Qué es vector similarity?",
+    "answers": [
+      {
+        "content": "Cosine euclidean dot product embeddings RAG",
+        "correct": true
+      },
+      {
+        "content": "Levenshtein strings",
+        "correct": false
+      },
+      {
+        "content": "Jaccard sets",
+        "correct": false
+      },
+      {
+        "content": "Hamming binary",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 261,
+    "title": "¿Qué es :modal CSS?",
+    "answers": [
+      {
+        "content": "Estilos diálogos modales abiertos",
+        "correct": true
+      },
+      {
+        "content": ":focus-visible keyboard",
+        "correct": false
+      },
+      {
+        "content": ":has parent selector",
+        "correct": false
+      },
+      {
+        "content": ":popover-open",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 262,
+    "title": "¿Qué es Scoped Value Java?",
+    "answers": [
+      {
+        "content": "Valores thread-local modernos immutables inheritance",
+        "correct": true
+      },
+      {
+        "content": "ThreadLocal mutable",
+        "correct": false
+      },
+      {
+        "content": "InheritableThreadLocal",
+        "correct": false
+      },
+      {
+        "content": "MDC logging",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 263,
+    "title": "¿Qué es Reactive Streams?",
+    "answers": [
+      {
+        "content": "Espec backpressure Publisher Subscriber Processor",
+        "correct": true
+      },
+      {
+        "content": "RxJava observables",
+        "correct": false
+      },
+      {
+        "content": "Project Reactor Flux Mono",
+        "correct": false
+      },
+      {
+        "content": "Akka streams",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 264,
+    "title": "¿Qué es lakehouse architecture?",
+    "answers": [
+      {
+        "content": "Data lake + warehouse ACID tables open formats",
+        "correct": true
+      },
+      {
+        "content": "OLAP cubes",
+        "correct": false
+      },
+      {
+        "content": "NoSQL document",
+        "correct": false
+      },
+      {
+        "content": "Graph neo4j",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 265,
+    "title": "¿Qué es color-mix() CSS?",
+    "answers": [
+      {
+        "content": "Mezcla colores porcentaje relativo",
+        "correct": true
+      },
+      {
+        "content": "Color contrast",
+        "correct": false
+      },
+      {
+        "content": "Relative color syntax",
+        "correct": false
+      },
+      {
+        "content": "Ok lab perceptual",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 266,
+    "title": "¿Qué es Key Encapsulation Mechanism?",
+    "answers": [
+      {
+        "content": "KEM post-quantum crypto key exchange ML-KEM",
+        "correct": true
+      },
+      {
+        "content": "RSA asymmetric",
+        "correct": false
+      },
+      {
+        "content": "ECDH elliptic",
+        "correct": false
+      },
+      {
+        "content": "AES symmetric",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 267,
+    "title": "¿Qué es @RateLimiter?",
+    "answers": [
+      {
+        "content": "Limita tasa llamadas tokens bucket Resilience4j",
+        "correct": true
+      },
+      {
+        "content": "Semaphore bulkhead",
+        "correct": false
+      },
+      {
+        "content": "Circuit open half-open",
+        "correct": false
+      },
+      {
+        "content": "TimeLimiter timeout",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 268,
+    "title": "¿Qué es RAG Retrieval Augmented Generation?",
+    "answers": [
+      {
+        "content": "Vector search + LLM generación contextual",
+        "correct": true
+      },
+      {
+        "content": "Fine-tuning model",
+        "correct": false
+      },
+      {
+        "content": "Prompt engineering",
+        "correct": false
+      },
+      {
+        "content": "Chain of thought",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 269,
+    "title": "¿Qué es @layer CSS?",
+    "answers": [
+      {
+        "content": "Cascade layers especificidad controlada @layer base components",
+        "correct": true
+      },
+      {
+        "content": "Container queries",
+        "correct": false
+      },
+      {
+        "content": "Scope styles",
+        "correct": false
+      },
+      {
+        "content": "Private selectors",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 270,
+    "title": "¿Qué es Primitive Types Java preview?",
+    "answers": [
+      {
+        "content": "Value types inline primitives objetos performance",
+        "correct": true
+      },
+      {
+        "content": "Records immutable",
+        "correct": false
+      },
+      {
+        "content": "Pattern matching",
+        "correct": false
+      },
+      {
+        "content": "Unamed patterns",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 271,
+    "title": "¿Qué es Spring AI?",
+    "answers": [
+      {
+        "content": "Abstracciones LLM embeddings vector stores RAG",
+        "correct": true
+      },
+      {
+        "content": "Spring Cloud AI services",
+        "correct": false
+      },
+      {
+        "content": "Micronaut AI",
+        "correct": false
+      },
+      {
+        "content": "Quarkus OpenAI",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 272,
+    "title": "¿Qué es Iceberg Apache?",
+    "answers": [
+      {
+        "content": "Table format lakehouse ACID schema evolution",
+        "correct": true
+      },
+      {
+        "content": "Parquet columnar",
+        "correct": false
+      },
+      {
+        "content": "Delta Lake MS",
+        "correct": false
+      },
+      {
+        "content": "Hudi upsert",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 273,
+    "title": "¿Qué es :user-invalid CSS?",
+    "answers": [
+      {
+        "content": "Valida estados formulario interacción usuario",
+        "correct": true
+      },
+      {
+        "content": ":invalid siempre",
+        "correct": false
+      },
+      {
+        "content": ":valid success",
+        "correct": false
+      },
+      {
+        "content": ":out-of-range",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 274,
+    "title": "¿Qué es Module Path Java?",
+    "answers": [
+      {
+        "content": "--module-path modules JPMS encapsulation",
+        "correct": true
+      },
+      {
+        "content": "Classpath legacy",
+        "correct": false
+      },
+      {
+        "content": "JLink custom runtime",
+        "correct": false
+      },
+      {
+        "content": "JPackage installer",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 275,
+    "title": "¿Qué es @TimeLimiter?",
+    "answers": [
+      {
+        "content": "Timeout ejecución métodos Resilience4j",
+        "correct": true
+      },
+      {
+        "content": "Bulkhead concurrency",
+        "correct": false
+      },
+      {
+        "content": "Retry attempts",
+        "correct": false
+      },
+      {
+        "content": "Circuit state",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 276,
+    "title": "¿Qué es Pinecone vector DB?",
+    "answers": [
+      {
+        "content": "Serverless vector database similarity search upsert query",
+        "correct": true
+      },
+      {
+        "content": "Weaviate graph",
+        "correct": false
+      },
+      {
+        "content": "Milvus open source",
+        "correct": false
+      },
+      {
+        "content": "Qdrant rust",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 277,
+    "title": "¿Qué es anchor positioning CSS?",
+    "answers": [
+      {
+        "content": "Posiciona elementos relativos anchors popover tooltip",
+        "correct": true
+      },
+      {
+        "content": "Position sticky",
+        "correct": false
+      },
+      {
+        "content": "Logical properties",
+        "correct": false
+      },
+      {
+        "content": "Overlay fit",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 278,
+    "title": "¿Qué es GraalVM Native Image?",
+    "answers": [
+      {
+        "content": "AOT compilado executable startup bajo memoria",
+        "correct": true
+      },
+      {
+        "content": "JIT hotspot",
+        "correct": false
+      },
+      {
+        "content": "Project Valhalla values",
+        "correct": false
+      },
+      {
+        "content": "Loom virtual threads",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 279,
+    "title": "¿Qué es @CircuitBreaker?",
+    "answers": [
+      {
+        "content": "Fallback failure rate sliding window Resilience4j",
+        "correct": true
+      },
+      {
+        "content": "Hystrix legacy",
+        "correct": false
+      },
+      {
+        "content": "Istio service mesh",
+        "correct": false
+      },
+      {
+        "content": "Linkerd proxy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 280,
+    "title": "¿Qué es LangChain Java?",
+    "answers": [
+      {
+        "content": "Chains agents tools memory LLM integrations",
+        "correct": true
+      },
+      {
+        "content": "Haystack pipelines",
+        "correct": false
+      },
+      {
+        "content": "LlamaIndex data connectors",
+        "correct": false
+      },
+      {
+        "content": "Semantic Kernel MS",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 281,
+    "title": "¿Qué es cascade layers CSS?",
+    "answers": [
+      {
+        "content": "@layer order cascade override control",
+        "correct": true
+      },
+      {
+        "content": "CSS nesting",
+        "correct": false
+      },
+      {
+        "content": "Custom properties",
+        "correct": false
+      },
+      {
+        "content": "Color palette",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 282,
+    "title": "¿Qué es Vector API Java?",
+    "answers": [
+      {
+        "content": "SIMD intrinsics species operations performance",
+        "correct": true
+      },
+      {
+        "content": "Panama FFI",
+        "correct": false
+      },
+      {
+        "content": "Project Loom",
+        "correct": false
+      },
+      {
+        "content": "Foreign Memory",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 283,
+    "title": "¿Qué es Spring Modulith?",
+    "answers": [
+      {
+        "content": "Modular monoliths boundaries verification events",
+        "correct": true
+      },
+      {
+        "content": "Microservices cloud",
+        "correct": false
+      },
+      {
+        "content": "GraphQL federation",
+        "correct": false
+      },
+      {
+        "content": "Kafka streams",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 284,
+    "title": "¿Qué es DuckDB?",
+    "answers": [
+      {
+        "content": "OLAP embeddable SQL columnar zero-config",
+        "correct": true
+      },
+      {
+        "content": "SQLite embed",
+        "correct": false
+      },
+      {
+        "content": "Polars dataframe",
+        "correct": false
+      },
+      {
+        "content": "ClickHouse columnar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 285,
+    "title": "¿Qué es scroll-driven-animations?",
+    "answers": [
+      {
+        "content": "Animaciones timeline scroll position",
+        "correct": true
+      },
+      {
+        "content": "Intersection observer",
+        "correct": false
+      },
+      {
+        "content": "View timeline",
+        "correct": false
+      },
+      {
+        "content": "Container scroll",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 286,
+    "title": "¿Qué es JFR Java Flight Recorder?",
+    "answers": [
+      {
+        "content": "Low overhead profiling events diagnostics",
+        "correct": true
+      },
+      {
+        "content": "Async profiler sampler",
+        "correct": false
+      },
+      {
+        "content": "JVisualVM sampler",
+        "correct": false
+      },
+      {
+        "content": "Mission Control analyze",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 287,
+    "title": "¿Qué es @MeterTag?",
+    "answers": [
+      {
+        "content": "Etiquetas dinámicas métricas Micrometer",
+        "correct": true
+      },
+      {
+        "content": "Timer percentiles",
+        "correct": false
+      },
+      {
+        "content": "Counter increment",
+        "correct": false
+      },
+      {
+        "content": "Gauge value",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 288,
+    "title": "¿Qué es pgvector?",
+    "answers": [
+      {
+        "content": "PostgreSQL extension vector similarity indexes",
+        "correct": true
+      },
+      {
+        "content": "TimescaleDB time series",
+        "correct": false
+      },
+      {
+        "content": "PostGIS spatial",
+        "correct": false
+      },
+      {
+        "content": "Citus distributed",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 289,
+    "title": "¿Qué es :dir(ltr) CSS?",
+    "answers": [
+      {
+        "content": "Selecciona dirección texto left-to-right",
+        "correct": true
+      },
+      {
+        "content": "Language lang=es",
+        "correct": false
+      },
+      {
+        "content": "RTL right-to-left",
+        "correct": false
+      },
+      {
+        "content": "Writing mode vertical",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 290,
+    "title": "¿Qué es Unnamed Variables Patterns Java?",
+    "answers": [
+      {
+        "content": "ignora partes patrones switch",
+        "correct": true
+      },
+      {
+        "content": "Null patterns",
+        "correct": false
+      },
+      {
+        "content": "Guarded patterns",
+        "correct": false
+      },
+      {
+        "content": "Deconstruction",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 291,
+    "title": "¿Qué es Spring HATEOAS?",
+    "answers": [
+      {
+        "content": "Hypermedia REST links representations",
+        "correct": true
+      },
+      {
+        "content": "OpenAPI docs",
+        "correct": false
+      },
+      {
+        "content": "Swagger UI",
+        "correct": false
+      },
+      {
+        "content": "HAL browser",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 292,
+    "title": "¿Qué es Trino Presto?",
+    "answers": [
+      {
+        "content": "Distributed SQL query engine federated sources",
+        "correct": true
+      },
+      {
+        "content": "Spark batch",
+        "correct": false
+      },
+      {
+        "content": "Flink streaming",
+        "correct": false
+      },
+      {
+        "content": "Databricks Unity",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 293,
+    "title": "¿Qué es trig() CSS?",
+    "answers": [
+      {
+        "content": "Trigger layout scroll-driven animations",
+        "correct": true
+      },
+      {
+        "content": "Math functions",
+        "correct": false
+      },
+      {
+        "content": "Color trig",
+        "correct": false
+      },
+      {
+        "content": "Filter effects",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 294,
+    "title": "¿Qué es CRaC Checkpoint Restore?",
+    "answers": [
+      {
+        "content": "Estado memoria checkpoint fast startup",
+        "correct": true
+      },
+      {
+        "content": "AOT native compile",
+        "correct": false
+      },
+      {
+        "content": "AppCDS class data",
+        "correct": false
+      },
+      {
+        "content": "JLink slim runtime",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 295,
+    "title": "¿Qué es @Observed Micrometer?",
+    "answers": [
+      {
+        "content": "Observability spans metrics traces auto",
+        "correct": true
+      },
+      {
+        "content": "Manual timer",
+        "correct": false
+      },
+      {
+        "content": "Long task async",
+        "correct": false
+      },
+      {
+        "content": "Distribution summary",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 296,
+    "title": "¿Qué es Neon serverless Postgres?",
+    "answers": [
+      {
+        "content": "Cloud Postgres scale storage compute autosuspend",
+        "correct": true
+      },
+      {
+        "content": "Supabase realtime",
+        "correct": false
+      },
+      {
+        "content": "PlanetScale Vitess",
+        "correct": false
+      },
+      {
+        "content": "CockroachDB geo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 297,
+    "title": "¿Qué es @scope CSS container?",
+    "answers": [
+      {
+        "content": "Ámbito queries contenedor estilos anidados",
+        "correct": true
+      },
+      {
+        "content": "Cascade layers",
+        "correct": false
+      },
+      {
+        "content": "Style queries",
+        "correct": false
+      },
+      {
+        "content": "Name container",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 298,
+    "title": "¿Qué es ZGC generational?",
+    "answers": [
+      {
+        "content": "Pauses bajos young old gen concurrent",
+        "correct": true
+      },
+      {
+        "content": "G1 regions",
+        "correct": false
+      },
+      {
+        "content": "Shenandoah barriers",
+        "correct": false
+      },
+      {
+        "content": "Epsilon no-op",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 299,
+    "title": "¿Qué es @CircuitBreaker fallbackFactory?",
+    "answers": [
+      {
+        "content": "Fábrica fallback custom exceptions Resilience4j",
+        "correct": true
+      },
+      {
+        "content": "Simple method fallback",
+        "correct": false
+      },
+      {
+        "content": "Reactive fallback",
+        "correct": false
+      },
+      {
+        "content": "Async fallback",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "idQuestion": 300,
+    "title": "¿Qué es pgai Postgres AI?",
+    "answers": [
+      {
+        "content": "Extension vector embeddings pgvector pgai",
+        "correct": true
+      },
+      {
+        "content": "Supabase pgvector",
+        "correct": false
+      },
+      {
+        "content": "Timescale vector",
+        "correct": false
+      },
+      {
+        "content": "Crunchy vectorize",
+        "correct": false
+      }
+    ]
+  }
+]
