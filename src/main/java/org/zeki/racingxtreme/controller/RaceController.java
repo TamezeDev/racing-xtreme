@@ -46,8 +46,6 @@ public class RaceController {
     @FXML
     private Button nextPlayerBtn;
     @FXML
-    private StackPane circuitPane;
-    @FXML
     private Button throwCubeBtn;
     @FXML
     private VBox cubeBoxArea;
@@ -143,7 +141,6 @@ public class RaceController {
         loadCurrentRound();
         updateStatsArea();
         loadCarImage();
-        //resizeCars();
         executeRound();
 
     }
@@ -489,18 +486,6 @@ public class RaceController {
         carImageMap.put(3, car4ImgView);
     }
 
-    private void resizeCars() {
-
-        double carHeight = 0.11;
-        double containerHeight = circuitPane.getHeight();
-        double newCarHeight = containerHeight * carHeight;
-
-        for (ImageView car : carImageMap.values()) {
-            car.setPreserveRatio(true);
-            car.setFitHeight(newCarHeight);
-        }
-    }
-
     private int checkPreviousRaces(String raceItem) {
         if (raceItem == null || !raceItem.startsWith("Resultados carrera ")) {
             System.out.println("DEBUG: No startsWith");
@@ -753,7 +738,7 @@ public class RaceController {
 
     private void getTotalKm() {
         //base power
-        int baseCube = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getBasePower() + 50;
+        int baseCube = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getBasePower() + 10;
         ArrayList<Integer> extraParams = new ArrayList<>();
         //add car stats
         extraParams.add(Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getAcceleration());
@@ -782,7 +767,7 @@ public class RaceController {
         int carEndurance = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getHardness();
         int luckDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getLuck();
         int totalPoints = carEndurance + luckDriver;
-        int randomDamage = (int) (Math.random() * 20);
+        int randomDamage = (int) (Math.random() * 18);
         if (randomDamage > totalPoints) {
             String nameDriver = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getNickName();
             feedBackLabel.setText(nameDriver + " tiene problemas mecánicos y no puede moverse");

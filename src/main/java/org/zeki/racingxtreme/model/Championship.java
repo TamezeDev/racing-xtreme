@@ -56,7 +56,6 @@ public class Championship {
         this.gameMode = gameMode;
     }
 
-
     public Set<Integer> getUsedIds() {
         return usedIds;
     }

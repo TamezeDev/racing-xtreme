@@ -25,11 +25,11 @@
                           <GridPane alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="321.0">
 
                               <columnConstraints>
-                     <ColumnConstraints percentWidth="19.0" />
-                            <ColumnConstraints percentWidth="26.0" />
+                     <ColumnConstraints percentWidth="15.0" />
                             <ColumnConstraints percentWidth="25.0" />
-                            <ColumnConstraints percentWidth="25.0" />
-                            <ColumnConstraints percentWidth="25.0" />
+                            <ColumnConstraints percentWidth="28.0" />
+                            <ColumnConstraints percentWidth="23.0" />
+                            <ColumnConstraints percentWidth="29.0" />
                      <ColumnConstraints percentWidth="10.0" />
                         </columnConstraints>
 
