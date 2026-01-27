@@ -159,13 +159,8 @@ public class Driver {
         return endurance;
     }
 
-
     public int getLuck() {
         return luck;
-    }
-
-    public void setLuck(int luck) {
-        this.luck = luck;
     }
 
     public Car getCar() {

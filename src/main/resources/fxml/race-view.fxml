@@ -127,7 +127,10 @@
                                 </VBox>
                         <VBox alignment="CENTER" prefWidth="1000.0">
                            <children>
-                              <Label fx:id="feedBackLabel" alignment="CENTER" styleClass="feedBackLabelB" text="Este texto es de pruebas para el feedback del Usuario" />
+                              <Label fx:id="feedBackLabel" alignment="CENTER" styleClass="feedBackLabelB" text="Este texto es de pruebas para el feedback del Usuario">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin></Label>
                               <VBox alignment="CENTER" spacing="10.0">
                                  <children>
                                     <HBox fx:id="roundsBox" alignment="CENTER" spacing="170.0">
@@ -250,8 +253,9 @@
                                           </VBox>
                                           <VBox fx:id="resultTableBox" alignment="CENTER" spacing="40.0" visible="false">
                                              <children>
+                                                <Label fx:id="championshipWinnerLabel" styleClass="model-labelA" text="Ganador del campeonato: " />
                                                 <Label styleClass="model-labelA" text="Resultado final del campeonato:" />
-                                                <TableView fx:id="finishTable" prefHeight="200.0" prefWidth="1000.0" styleClass="model-TableA">
+                                                <TableView fx:id="finishTable" prefHeight="210.0" prefWidth="1000.0" styleClass="model-TableA">
 
                                                 </TableView>
                                                 <Button mnemonicParsing="false" onAction="#goToFirstScene" styleClass="model-ButtonA" text="Volver al menú" />

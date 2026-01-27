@@ -1,0 +1,22 @@
+[
+  {
+    "idQuestion": 1,
+    "title": "¿Cuál es la capital de Francia?",
+    "answers": [
+      { "content": "Madrid", "correct": false },
+      { "content": "París", "correct": true },
+      { "content": "Roma", "correct": false },
+      { "content": "Berlín", "correct": false }
+    ]
+  },
+  {
+    "idQuestion": 2,
+    "title": "¿Cuántas ruedas tiene un coche?",
+    "answers": [
+      { "content": "2", "correct": false },
+      { "content": "3", "correct": false },
+      { "content": "4", "correct": true },
+      { "content": "6", "correct": false }
+    ]
+  }
+]

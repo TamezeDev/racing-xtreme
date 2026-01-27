@@ -1,5 +1,7 @@
 package org.zeki.racingxtreme.controller;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +17,11 @@ import org.zeki.racingxtreme.util.Path;
 import org.zeki.racingxtreme.util.SceneHelper;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 
@@ -69,7 +75,28 @@ public class LocalSelectionController {
         createChampionship();
         createAllRaces();
         createEmptyDrivers();
+        loadQuestions();
         SceneHelper.goToOtherScene(path.getSelectTeam(), event);
+    }
+
+    private void loadQuestions() {
+        String gameMode = Championship.getInstance().getGameMode();
+        String questionsFilePath = null;
+        switch (gameMode) {
+            case "STANDARD" -> questionsFilePath = "/question/questionF1.json";
+            case "DEVELOPERS" -> questionsFilePath = "/question/questionDeveloper.json";
+        }
+        try {
+            if (questionsFilePath != null) {
+                InputStream is = getClass().getResourceAsStream(questionsFilePath);
+                Gson gson = new Gson();
+                Type listType = new TypeToken<List<Question>>() {
+                }.getType();
+                Championship.getInstance().setQuestions(gson.fromJson(new InputStreamReader(is), listType));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void setResponsiveBackground() {

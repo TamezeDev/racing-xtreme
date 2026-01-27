@@ -13,9 +13,11 @@ module org.zeki.racingxtreme {
     requires javafx.graphics;
     requires annotations;
     requires java.desktop;
+    requires com.google.gson;
 
     opens org.zeki.racingxtreme to javafx.fxml;
     exports org.zeki.racingxtreme;
     exports org.zeki.racingxtreme.controller;
     opens org.zeki.racingxtreme.controller to javafx.fxml;
+    opens org.zeki.racingxtreme.model to com.google.gson;
 }

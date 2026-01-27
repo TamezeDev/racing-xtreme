@@ -2,11 +2,13 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.zeki.racingxtreme.controller.StartStageController">
    <children>
@@ -17,15 +19,19 @@
                         <Image url="@../img/background/start-image.png" />
                     </image>
                 </ImageView>
-                <HBox alignment="BOTTOM_CENTER" spacing="100.0">
-                    <children>
-                        <Button mnemonicParsing="false" onAction="#loadLocalMode" styleClass="model-ButtonA" text="Partida Local" />
-                        <Button layoutX="944.0" layoutY="1065.0" mnemonicParsing="false" styleClass="model-ButtonA" text="Partida Online" />
-                    </children>
+            <VBox alignment="BOTTOM_CENTER" spacing="40.0">
+               <children>
+                      <HBox alignment="BOTTOM_CENTER" spacing="100.0">
+                          <children>
+                              <Button mnemonicParsing="false" onAction="#loadLocalMode" styleClass="model-ButtonA" text="Comenzar campeonato" />
+                          </children>
+                      </HBox>
+                  <Label styleClass="model-labelB" text="Juego desarrollado por Ezequiel Tamayo" />
+               </children>
                <StackPane.margin>
-                  <Insets bottom="60.0" />
+                  <Insets bottom="30.0" />
                </StackPane.margin>
-                </HBox>
+            </VBox>
          </children>
       </StackPane>
    </children>

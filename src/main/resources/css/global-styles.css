@@ -38,7 +38,7 @@ TextField {
     -fx-background-color: #0F0C16;
 }
 .selectTeamPane {
-    -fx-background-color: #B25E00
+    -fx-background-color: #9D6649
 }
 /* LABELS */
 .model-labelA {
@@ -98,7 +98,11 @@ TextField {
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4);
 }
 .cardSelected, .answerSelected {
-    -fx-background-color: #B25E00;
+    -fx-background-color: #9D6649;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4);
+}
+.rightCard {
+-fx-background-color: #57965C;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0.4, 0 ,4);
 }
 /* STATISTICS CARDS */
