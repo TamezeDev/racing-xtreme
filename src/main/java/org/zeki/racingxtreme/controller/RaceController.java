@@ -750,7 +750,7 @@ public class RaceController {
 
     private void getTotalKm() {
         //base power
-        int baseCube = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getBasePower() + 10;
+        int baseCube = Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getBasePower() + 15;
         ArrayList<Integer> extraParams = new ArrayList<>();
         //add car stats
         extraParams.add(Championship.getInstance().getRaces()[currentRace].getDriverList().get(currentPlayer).getCar().getAcceleration());
