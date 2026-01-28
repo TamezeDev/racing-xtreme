@@ -13,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import org.zeki.racingxtreme.model.AudioManager;
 import org.zeki.racingxtreme.util.Path;
 import org.zeki.racingxtreme.util.SceneHelper;
 
@@ -28,6 +29,7 @@ public class StartStageController extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        AudioManager.getInstance();
         initStage(stage);
         addMainIcon(stage);
         closeAlert(stage);

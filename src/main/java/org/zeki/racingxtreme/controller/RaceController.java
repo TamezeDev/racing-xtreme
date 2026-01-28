@@ -134,7 +134,7 @@ public class RaceController {
 
     @FXML
     public void initialize() {
-
+        AudioManager.getInstance().setRandomRaceGame();
         setImagesCarMap();
         createDriversCards();
         setWeatherCard(currentRace);
@@ -148,6 +148,7 @@ public class RaceController {
 
     @FXML
     private void goToNexRace() {
+        AudioManager.getInstance().setRandomRaceGame();
         podiumBox.setVisible(false);
         startNewRace();
     }
@@ -206,6 +207,7 @@ public class RaceController {
     @FXML
     private void goToFirstScene(ActionEvent event) throws IOException {
         SceneHelper.goToOtherScene(path.getStartStage(), event);
+        AudioManager.getInstance().resetStart();
     }
 
     private void resetAllParams() {
@@ -892,6 +894,7 @@ public class RaceController {
         podium1Image.setImage(updatedOrderDrivers.get(0).getImage());
         podium2Image.setImage(updatedOrderDrivers.get(1).getImage());
         podium3Image.setImage(updatedOrderDrivers.get(2).getImage());
+        AudioManager.getInstance().setVictorySound();
         podiumBox.setVisible(true);
     }
 
