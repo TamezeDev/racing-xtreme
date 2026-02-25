@@ -15,7 +15,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Callback;
 import javafx.util.Duration;
@@ -595,7 +594,7 @@ public class RaceController {
     }
 
     private void startQuestionTimer() {
-        final int[] reamining = {10};
+        final int[] reamining = {15};
         answerChecked = false;
         timeLabel.setText(String.valueOf(reamining[0]));
 
@@ -608,7 +607,7 @@ public class RaceController {
             }
         }));
 
-        questionTimer.setCycleCount(10);
+        questionTimer.setCycleCount(15);
         questionTimer.play();
     }
 
